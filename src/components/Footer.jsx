@@ -3,7 +3,7 @@ import Logo from "../assets/logo.png"
 
 const Footer = () => {
     return (
-        <footer className="bg-slate-900 border-t border-gray-200">
+        <footer className="bg-slate-900 border-t border-gray-800">
             <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-6 sm:px-6 lg:px-8 lg:pt-24">
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
                     <div>
@@ -96,7 +96,7 @@ const Footer = () => {
                     </div>
 
                     <div className="grid grid-cols-2 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2">
-                        <div className="text-left">
+                        {/* <div className="text-left">
                             <p className="text-lg font-medium text-slate-100">About Us</p>
 
                             <ul className="mt-8 space-y-4 text-sm">
@@ -162,7 +162,7 @@ const Footer = () => {
 
 
                             </ul>
-                        </div>
+                        </div> */}
 
                         <div className=" text-left">
                             <p className="text-lg font-medium text-slate-100">Contact Us</p>
@@ -251,7 +251,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="mt-12 border-t border-slate-200 pt-6">
+                <div className="mt-12 border-t border-gray-800 pt-6">
                     <div className="text-center sm:flex sm:justify-between sm:text-left">
                         <p className="text-sm text-slate-400 ">
                             <span className="block sm:inline">All rights reserved.</span>

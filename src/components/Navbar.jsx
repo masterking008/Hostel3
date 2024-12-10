@@ -78,7 +78,9 @@ export default function Navbar() {
                     <a href="./About" className="text-sm font-semibold leading-6 text-slate-100">
                         ABOUT US
                     </a>
-                    <a href="./Contact" className="text-sm font-semibold leading-6 text-slate-100">
+                    <a href="./Gallery" className="text-sm font-semibold leading-6 text-slate-100">
+GALLERY                    </a>
+                    {/* <a href="./Contact" className="text-sm font-semibold leading-6 text-slate-100">
                         SPORTS
                     </a>
                     <a href="./Contact" className="text-sm font-semibold leading-6 text-slate-100">
@@ -92,8 +94,8 @@ export default function Navbar() {
                     </a>
                     <a href="./Contact" className="text-sm font-semibold leading-6 text-slate-100">
                         CONTACT
-                    </a>
-                    <Popover className="relative">
+                    </a> */}
+                    {/* <Popover className="relative">
                         <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-slate-100 focus:outline-none" >
                             USEFUL LINKS
                             <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none text-gray-400" />
@@ -119,13 +121,13 @@ export default function Navbar() {
                                 ))}
                             </div>
                         </PopoverPanel>
-                    </Popover>
+                    </Popover> */}
 
                 </PopoverGroup>
             </nav>
             <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
                 <div className="fixed inset-0 z-10" />
-                <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-slate-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div className="flex items-center -mx-6 -my-6 justify-between">
                         <a href="#" className="">
                             <span className="sr-only">IRSCP</span>

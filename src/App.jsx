@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import ErrorPage from "./components/Error";
 import AboutPage from "./components/AboutPage";
 import HomePage from "./components/HomePage";
+import Gallery from "./components/Gallery";
 
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/About" element={<AboutPage />} />
+        <Route path="/Gallery" element={<Gallery />} />
         {/* <Route path="/Conatct" element={<AboutSection />} /> */}
         <Route path="/*" element={<ErrorPage />} />
       </Routes>

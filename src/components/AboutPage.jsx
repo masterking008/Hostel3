@@ -10,38 +10,35 @@ const AboutPage = () => {
                         <h2 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-50 sm:text-4xl">
                             Hostel 3 Council                        </h2>
                     </div>
-                    <div className="rounded-2xl bg-slate-200  shadow-xl shadow-slate-900/10 m-3 p-4 text-center hover:shadow-xl transition-all duration-300" // Darker shadow on hover
+                    <div className="rounded-2xl bg-slate-200  shadow-xl shadow-slate-900/10 m-3 p-4 pb-8 text-center hover:shadow-xl transition-all duration-300" // Darker shadow on hover
                     >
                         <div>
-                            <h2 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                            <h2 className="m-3 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                                 Maintainance                   </h2>
                         </div>
-                        <div className='flex'>
-                            <div>
-                                <div className="rounded-2xl bg-white shadow-xl shadow-slate-900/10 p-4 text-center hover:bg-slate-200 hover:shadow-xl transition-all duration-300" // Darker shadow on hover
-                                    style={{ width: '350px', margin: '0 auto' }} >
-                                      <img
-                                        className="w-48 h-48 rounded-full mx-auto mb-4" // Image size
-                                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
-                                        alt="Rohan"
-                                    />
-                                    <h3 className="mt-2 text-xl leading-6 font-medium text-gray-900">
-                                        Rohan
-                                    </h3>
-                                    <p className="mt-2 text-lg text-gray-500">
-                                        Counciler                                    </p>
-                                   
-                                </div>
+                        <div className='flex justify-center'>
+
+                            <div className="rounded-2xl bg-white shadow-xl w-64 m-6 shadow-slate-900/10 p-4 text-center hover:bg-gray-700 hover:shadow-xl hover:w-80 transition-all duration-300" // Darker shadow on hover
+                             >
+                                <img
+                                    className="w-48 h-48 rounded-full mx-auto mb-4 " // Image size
+                                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
+                                    alt="Rohan"
+                                />
+                                <h3 className="mt-2 text-xl leading-6 font-medium text-blue-500">
+                                    Rohan
+                                </h3>
+                                <p className="mt-2 text-lg text-gray-500">
+                                    Counciler                                    </p>
+                                <p className="mt-2 text-lg text-gray-500">
+                                    phone                                    </p>
+                                <p className="mt-2 text-lg text-gray-500">
+                                    email                                    </p>
+                                    
                             </div>
-                            <div>
-                                <div className="team-text">Team Details </div>
-                                <div className="team-secy">
-                                    <div className="rounded-2xl bg-white shadow-xl shadow-slate-900/10 p-4 text-center hover:bg-slate-200 hover:shadow-xl transition-all duration-300" // Darker shadow on hover
-                                        style={{ width: '250px', margin: '0 auto' }} >
-                                        Secy 1
-                                    </div>
-                                </div>
-                            </div>
+                          
+                      
+                           
                         </div>
                         {/* <ul
                             role="list"
@@ -71,6 +68,8 @@ const AboutPage = () => {
                             ))}
                         </ul> */}
                     </div>
+                
+                  
                 </div>
             </div>
         </>

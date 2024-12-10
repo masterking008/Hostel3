@@ -32,12 +32,12 @@ const FAQ = () => {
                     >
                         Frequently asked questions
                     </h2>
-                    <p className="mt-10 text-lg tracking-tight text-slate-700">
+                    <p className="mt-10 text-lg tracking-tight text-slate-200">
                        Hostel 3
                     </p>
                 </div>
                 <section className="mt-10">
-                    <dl className="mt-3 divide-y divide-gray-300">
+                    <dl className="mt-3 divide-y divide-gray-800">
                         {faqData.map((faq, index) => (
                             <div key={index} className="py-4">
                                 <summary
@@ -63,8 +63,8 @@ const FAQ = () => {
                                         }`}
                                 >
                                     <div className="pb-6 pt-6">
-                                        <div className="prose prose-slate max-w-none prose-a:font-semibold prose-a:text-indigo-600 hover:prose-a:text-indigo-500">
-                                            <p className=" text-lg tracking-tight text-slate-700">{faq.answer}</p>
+                                        <div className="prose prose-slate max-w-none prose-a:font-semibold prose-a:text-indigo-100 hover:prose-a:text-indigo-500">
+                                            <p className=" text-lg tracking-tight text-slate-300">{faq.answer}</p>
                                         </div>
                                     </div>
                                 </div>
