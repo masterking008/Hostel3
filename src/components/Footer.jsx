@@ -3,7 +3,7 @@ import Logo from "../assets/logo.png"
 
 const Footer = () => {
     return (
-        <footer className="bg-slate-50 border-t border-gray-200">
+        <footer className="bg-slate-900 border-t border-gray-200">
             <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-6 sm:px-6 lg:px-8 lg:pt-24">
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
                     <div>
@@ -23,7 +23,7 @@ const Footer = () => {
                         <ul className="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
                             <li>
                                 <a
-                                    href="https://www.facebook.com/IITB.IRSCP/"
+                                    href="https://www.facebook.com/h3iitb/"
                                     rel="noreferrer"
                                     target="_blank"
                                     className="text-grey-700 transition hover:text-grey-700/75"
@@ -41,7 +41,7 @@ const Footer = () => {
 
                             <li>
                                 <a
-                                    href="https://www.instagram.com/irscp_iitb/"
+                                    href="https://www.instagram.com/vitruvians.iitb/"
                                     rel="noreferrer"
                                     target="_blank"
                                     className="text-grey-700 transition hover:text-grey-700/75"
@@ -95,85 +95,85 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2">
-                        <div className="text-center sm:text-left">
-                            <p className="text-lg font-medium text-gray-900">About Us</p>
+                    <div className="grid grid-cols-2 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2">
+                        <div className="text-left">
+                            <p className="text-lg font-medium text-slate-100">About Us</p>
 
                             <ul className="mt-8 space-y-4 text-sm">
                                 <li>
-                                    <a className="text-gray-700 transition hover:text-gray-700/75" href="#">
+                                    <a className="text-slate-400 transition hover:text-slate-400/75" href="#">
                                         Company History
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a className="text-gray-700 transition hover:text-gray-700/75" href="#">
+                                    <a className="text-slate-400 transition hover:text-slate-400/75" href="#">
                                         Meet the Team
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a className="text-gray-700 transition hover:text-gray-700/75" href="#">
+                                    <a className="text-slate-400 transition hover:text-slate-400/75" href="#">
                                         Employee Handbook
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Careers </a>
+                                    <a className="text-slate-400 transition hover:text-slate-400/75" href="#"> Careers </a>
                                 </li>
                             </ul>
                         </div>
 
-                        <div className="text-center sm:text-left">
-                            <p className="text-lg font-medium text-gray-900">Our Services</p>
+                        <div className="text-left">
+                            <p className="text-lg font-medium text-slate-100">Our Services</p>
 
                             <ul className="mt-8 space-y-4 text-sm">
                                 <li>
-                                    <a className="text-gray-700 transition hover:text-gray-700/75" href="#">
+                                    <a className="text-slate-400 transition hover:text-slate-400/75" href="#">
                                         Web Development
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Web Design </a>
+                                    <a className="text-slate-400 transition hover:text-slate-400/75" href="#"> Web Design </a>
                                 </li>
 
                                 <li>
-                                    <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Marketing </a>
+                                    <a className="text-slate-400 transition hover:text-slate-400/75" href="#"> Marketing </a>
                                 </li>
 
                                 <li>
-                                    <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Google Ads </a>
+                                    <a className="text-slate-400 transition hover:text-slate-400/75" href="#"> Google Ads </a>
                                 </li>
                             </ul>
                         </div>
 
-                        <div className="text-center sm:text-left">
-                            <p className="text-lg font-medium text-gray-900">Helpful Links</p>
+                        <div className="text-left">
+                            <p className="text-lg font-medium text-slate-100">Helpful Links</p>
 
                             <ul className="mt-8 space-y-4 text-sm">
                                 <li>
-                                    <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> FAQs </a>
+                                    <a className="text-slate-400 transition hover:text-slate-400/75" href="#"> FAQs </a>
                                 </li>
 
                                 <li>
-                                    <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Support </a>
+                                    <a className="text-slate-400 transition hover:text-slate-400/75" href="#"> Support </a>
                                 </li>
 
 
                             </ul>
                         </div>
 
-                        <div className="text-center sm:text-left">
-                            <p className="text-lg font-medium text-gray-900">Contact Us</p>
+                        <div className=" text-left">
+                            <p className="text-lg font-medium text-slate-100">Contact Us</p>
 
-                            <ul className="mt-8 space-y-4 text-sm">
+                            <ul className="mt-8 -ml-7 space-y-4 text-sm">
                                 <li
-                                    className="flex items-start justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                                    className="flex items-start  justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                                 >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        className="size-5 shrink-0 text-gray-900"
+                                        className="size-5 shrink-0 text-slate-100"
                                         fill="none"
                                         viewBox="0 0 24 24"
                                         stroke="currentColor"
@@ -191,7 +191,7 @@ const Footer = () => {
                                         />
                                     </svg>
 
-                                    <address className="-mt-0.5 flex-1 not-italic text-gray-700">
+                                    <address className="-mt-0.5 flex-1 not-italic text-slate-400 ">
                                     Hostel 3, IIT Bombay,
                                     Powai , Mumbai,
                                     Maharashtra - 400076
@@ -204,7 +204,7 @@ const Footer = () => {
                                     >
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
-                                            className="size-5 shrink-0 text-gray-900"
+                                            className="size-5 shrink-0 text-slate-100"
                                             fill="none"
                                             viewBox="0 0 24 24"
                                             stroke="currentColor"
@@ -217,7 +217,7 @@ const Footer = () => {
                                             />
                                         </svg>
 
-                                        <span className="flex-1 text-gray-700">gsech3@iitb.ac.in</span>
+                                        <span className="flex-1 text-slate-400 ">gsech3@iitb.ac.in</span>
                                     </a>
                                 </li>
                             
@@ -228,7 +228,7 @@ const Footer = () => {
                                     >
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
-                                            className="size-5 shrink-0 text-gray-900"
+                                            className="size-5 shrink-0 text-slate-100"
                                             fill="none"
                                             viewBox="0 0 24 24"
                                             stroke="currentColor"
@@ -241,7 +241,7 @@ const Footer = () => {
                                             />
                                         </svg>
 
-                                        <span className="flex-1 text-gray-700">+91 (22) 2576 2603</span>
+                                        <span className="flex-1 text-slate-400 ">+91 (22) 2576 2603</span>
                                     </a>
                                 </li> 
 
@@ -251,15 +251,15 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="mt-12 border-t border-gray-200 pt-6">
+                <div className="mt-12 border-t border-slate-200 pt-6">
                     <div className="text-center sm:flex sm:justify-between sm:text-left">
-                        <p className="text-sm text-gray-500">
+                        <p className="text-sm text-slate-400 ">
                             <span className="block sm:inline">All rights reserved.</span>
 
 
                         </p>
 
-                        <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">&copy; 2024 IRSCP, IIT Bombay</p>
+                        <p className="mt-4 text-sm text-slate-400 sm:order-first sm:mt-0">&copy; 2024 HOSTEL 3, IIT Bombay</p>
                     </div>
                 </div>
             </div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const ActivitySection = () => {
     return (
-        <div className="bg-slate-50 shadow-inner py-12">
+        <div className="bg-slate-900 shadow-inner py-12">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-3xl leading-8 font-lexend tracking-tight text-gray-900  sm:text-[40px] text-center">
                     Activity

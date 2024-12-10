@@ -11,9 +11,9 @@ const FAQ = () => {
         <section
             id="faq"
             aria-labelledby="faq-title"
-            className="relative overflow-hidden border-t border-slate-200 bg-slate-50 py-20 sm:py-32"
+            className="relative overflow-hidden bg-slate-900 py-20 sm:py-32"
         >
-            <img
+            {/* <img
                 alt=""
                 loading="lazy"
                 width={1558}
@@ -23,12 +23,12 @@ const FAQ = () => {
                 className="absolute left-1/2 top-0 max-w-none -translate-y-1/4 translate-x-[-30%]"
                 style={{ color: "transparent" }}
                 src="https://salient.tailwindui.com/_next/static/media/background-faqs.55d2e36a.jpg"
-            />
+            /> */}
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
                 <div className="mx-auto max-w-2xl lg:mx-0">
                     <h2
                         id="faq-title"
-                        className="font-lexend text-3xl tracking-tight text-slate-900 sm:text-[40px]"
+                        className="font-lexend text-3xl tracking-tight text-slate-100 sm:text-[40px]"
                     >
                         Frequently asked questions
                     </h2>
@@ -42,7 +42,7 @@ const FAQ = () => {
                             <div key={index} className="py-4">
                                 <summary
                                     onClick={() => toggleAccordion(index)}
-                                    className="flex w-full cursor-pointer select-none justify-between text-left text-xl font-lexend leading-7 text-slate-900 group-open:text-indigo-600 [&::-webkit-details-marker]:hidden"
+                                    className="flex w-full cursor-pointer select-none justify-between text-left text-xl font-lexend leading-7 text-slate-100 group-open:text-indigo-600 [&::-webkit-details-marker]:hidden"
                                 >
                                     {faq.question}
                                     <svg

@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import {
     Dialog,
     DialogPanel,
@@ -12,7 +12,7 @@ import {
     PopoverGroup,
     PopoverPanel,
 } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon,} from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon, } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 import Logo from "../assets/logo.png"
 
@@ -23,13 +23,37 @@ const items = [
 
 export default function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+    const [navbarBlur, setNavbarBlur] = useState(false);
+
+    // Track scroll position
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 100) {
+                setNavbarBlur(true);  // Apply blur when scrolling past 100px
+              } else {
+                setNavbarBlur(false); // Transparent when at top
+              }
+            };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
 
     return (
-        <header className="bg-transparent relative z-10">
+        <header    className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+            navbarBlur
+              ? 'backdrop-filter backdrop-blur-lg'
+              : 'bg-transparent'
+          }`}
+        >
             <nav aria-label="Global" className="flex items-center justify-between lg:px-8">
                 <div className="flex lg:flex-1">
                     <a href="./" className="-m-1.5 p-1.5">
-                        <span className="sr-only">IRSCP</span>
+                        <span className="sr-only">Vitruvians</span>
                         <img
                             alt="Vitruvians Logo"
                             src={Logo}
@@ -48,17 +72,29 @@ export default function Navbar() {
                     </button>
                 </div>
                 <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-                    <a href="./" className="text-sm font-semibold leading-6 text-gray-900">
+                    <a href="./" className="text-sm font-semibold leading-6 text-slate-100">
                         HOME
                     </a>
-                    <a href="./About" className="text-sm font-semibold leading-6 text-gray-900">
+                    <a href="./About" className="text-sm font-semibold leading-6 text-slate-100">
                         ABOUT US
                     </a>
-                    <a href="./Contact" className="text-sm font-semibold leading-6 text-gray-900">
+                    <a href="./Contact" className="text-sm font-semibold leading-6 text-slate-100">
+                        SPORTS
+                    </a>
+                    <a href="./Contact" className="text-sm font-semibold leading-6 text-slate-100">
+                        CULTURAL
+                    </a>
+                    <a href="./Contact" className="text-sm font-semibold leading-6 text-slate-100">
+                        TECH
+                    </a>
+                    <a href="./Contact" className="text-sm font-semibold leading-6 text-slate-100">
+                        MESS
+                    </a>
+                    <a href="./Contact" className="text-sm font-semibold leading-6 text-slate-100">
                         CONTACT
                     </a>
                     <Popover className="relative">
-                        <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 focus:outline-none" >
+                        <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-slate-100 focus:outline-none" >
                             USEFUL LINKS
                             <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none text-gray-400" />
                         </PopoverButton>
@@ -74,7 +110,7 @@ export default function Navbar() {
                                         className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                                     >
                                         <div className="flex-auto">
-                                            <a href={item.href} className="block font-semibold text-gray-900">
+                                            <a href={item.href} className="block font-semibold text-slate-100">
                                                 {item.name}
                                                 <span className="absolute inset-0" />
                                             </a>
@@ -113,24 +149,24 @@ export default function Navbar() {
                             <div className="space-y-2 py-6">
                                 <a
                                     href="#"
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-100 hover:bg-gray-50"
                                 >
                                     HOME
                                 </a>
                                 <a
                                     href="#"
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-100 hover:bg-gray-50"
                                 >
                                     ABOUT US
                                 </a>
                                 <a
                                     href="#"
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-100 hover:bg-gray-50"
                                 >
                                     CONTACT
                                 </a>
                                 <Disclosure as="div" className="-mx-3">
-                                    <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                                    <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-slate-100 hover:bg-gray-50">
                                         USEFUL LINKS
                                         <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none group-data-[open]:rotate-180" />
                                     </DisclosureButton>
@@ -140,7 +176,7 @@ export default function Navbar() {
                                                 key={item.name}
                                                 as="a"
                                                 href={item.href}
-                                                className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                                className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-slate-100 hover:bg-gray-50"
                                             >
                                                 {item.name}
                                             </DisclosureButton>

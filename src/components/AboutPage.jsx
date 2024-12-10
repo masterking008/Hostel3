@@ -4,87 +4,128 @@ import TeamSection from './Team';
 const AboutPage = () => {
     return (
         <>
-            <div className="bg-white py-12">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
-                    {/* Upper 3/4th: Image on the left and paragraphs on the right */}
-                    <div className="flex flex-col lg:flex-row lg:items-start">
-                        {/* Left Side: Team Image */}
-                        <div className="flex-1 lg:pr-8 mb-8 lg:mb-0">
-                            <img
-                                src="/files/irscp-group.jpg" // Replace with your team image URL
-                                alt="Team"
-                                className="w-full h-full max-h-[500px] rounded-lg shadow-md object-cover"
-                            />
-                        </div>
-
-                        {/* Right Side: Text */}
-                        <div className="flex-1 flex flex-col justify-center">
-                            <h2 className="text-2xl font-extrabold text-gray-900">About Us</h2>
-                            <p className="mt-4 text-gray-700">
-                                Institute Research Scholar Companion Programme (IRSCP) is a programme for the PhD Community of IIT Bombay with the primary objective to cater to the needs of research scholars.
-                            </p>
-                            <p className="mt-4 text-gray-700">
-                                PhD life is a completely different chapter of student life in terms of cultural, socio-economic, and academic aspects. Newly arrived PhD students generally face many problems related to academic/non-academic issues. This led to the conception of the idea of companions for the new research scholars, similar to the Student Companion Programme for new post-graduate students. Companions will try to make life here at IITB feel like 'Home Away From Home' for newcomers. They will help them cope with IITB life in both academic and non-academic ways.
-                            </p>
-                            <p className="mt-4 text-gray-700">
-                                Under this program, a group of people is available in each department, called the companions group of the department. A companion will be assigned to every new PhD entrant to the department. They are to help new entrants regarding issues, whether academic or non-academic. They will guide them by conducting regular interactive sessions. New entrants can approach them anywhere, anytime without any hesitation.
-                            </p>
-                        </div>
+            <div className="bg-slate-900 py-16 shadow-inner">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center">
+                        <h2 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-50 sm:text-4xl">
+                            Hostel 3 Council                        </h2>
                     </div>
-
-                    {/* Lower 1/4th: Three Boxes (Mission, Vision, History) */}
-                    <div className="mt-12">
-                        <ul
-                            role="list"
-                            className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4"
-                        >
-                            {boxesData.map((box) => (
-                                <li
-                                    key={box.title}
-                                    className="border rounded-lg p-4 bg-gray-200 shadow-md hover:bg-gray-300 transition duration-300 mx-auto"
-                                    style={{ width: '250px', height: '250px' }} // Fixed width
-                                >
-                                    <div className="flex flex-col items-center justify-center h-full">
-                                        {/* Centered square image */}
-                                        <img
-                                            className="w-[100px] h-[100px] object-cover rounded-lg mb-2" // Adjust size as needed
-                                            src={box.image}
-                                            alt={box.title}
-                                        />
-                                        {/* Title directly below the image */}
-                                        <h3 className="text-lg leading-6 font-medium text-gray-900 text-center">
-                                            {box.title}
-                                        </h3>
-                                        {/* Description */}
-                                        <p className="mt-2 text-sm text-gray-500 text-center flex-1">{box.text}</p>
+                    <div className="rounded-2xl bg-slate-200  shadow-xl shadow-slate-900/10 m-3 p-4 text-center hover:shadow-xl transition-all duration-300" // Darker shadow on hover
+                    >
+                        <div>
+                            <h2 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                                Maintainance                   </h2>
+                        </div>
+                        <div className='flex'>
+                            <div>
+                                <div className="rounded-2xl bg-white shadow-xl shadow-slate-900/10 p-4 text-center hover:bg-slate-200 hover:shadow-xl transition-all duration-300" // Darker shadow on hover
+                                    style={{ width: '350px', margin: '0 auto' }} >
+                                      <img
+                                        className="w-48 h-48 rounded-full mx-auto mb-4" // Image size
+                                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
+                                        alt="Rohan"
+                                    />
+                                    <h3 className="mt-2 text-xl leading-6 font-medium text-gray-900">
+                                        Rohan
+                                    </h3>
+                                    <p className="mt-2 text-lg text-gray-500">
+                                        Counciler                                    </p>
+                                   
+                                </div>
+                            </div>
+                            <div>
+                                <div className="team-text">Team Details </div>
+                                <div className="team-secy">
+                                    <div className="rounded-2xl bg-white shadow-xl shadow-slate-900/10 p-4 text-center hover:bg-slate-200 hover:shadow-xl transition-all duration-300" // Darker shadow on hover
+                                        style={{ width: '250px', margin: '0 auto' }} >
+                                        Secy 1
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        {/* <ul
+                            role="list"
+                            className="mt-10 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-4" // 4 columns for larger screens
+                        >
+                            {teamMembers.map((member) => (
+                                <li
+                                    key={member.name}
+                                    className="rounded-2xl bg-white shadow-xl shadow-slate-900/10 p-4 text-center hover:bg-slate-200 hover:shadow-xl transition-all duration-300" // Darker shadow on hover
+                                    style={{ width: '250px', margin: '0 auto' }} // Center the box and add fixed width in pixels
+                                >
+                                    <img
+                                        className="w-32 h-32 rounded-full mx-auto mb-4" // Image size
+                                        src={member.image}
+                                        alt={member.name}
+                                    />
+                                    <h3 className="mt-2 text-lg leading-6 font-medium text-gray-900">
+                                        {member.name}
+                                    </h3>
+                                    <p className="mt-2 text-sm text-gray-500">
+                                        {member.position}
+                                    </p>
+                                    <p className="mt-2 text-sm text-gray-500">
+                                        {member.location}
+                                    </p>
                                 </li>
                             ))}
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
             </div>
-            <TeamSection />
         </>
     );
 };
 
-// Data for the boxes
-const boxesData = [
+
+const teamMembers = [
     {
-        title: 'Mission',
-        text: 'Our mission is to develop innovative technologies that improve the quality of life and address critical challenges.',
-        image: '/files/mission-logo.jpeg', // Replace with your actual image path
+        name: 'Leslie Alexander',
+        position: 'Co-Founder / CEO',
+        location: 'Toronto, Canada',
+        image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80'
     },
     {
-        title: 'Vision',
-        text: 'We envision a future where technology empowers individuals and communities to reach their full potential.',
-        image: '/files/vision-logo.jpeg', // Replace with your actual image path
+        name: 'Michael Foster',
+        position: 'Co-Founder / CTO',
+        location: 'Glasgow, Scotland',
+        image: 'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80'
     },
     {
-        title: 'History',
-        text: 'Founded in 2010, our organization has a long history of innovation and dedication to excellence in technology.',
-        image: '/files/history-logo.jpeg', // Replace with your actual image path
+        name: 'Dries Vincent',
+        position: 'Business Relations',
+        location: 'Niagara Falls, Canada',
+        image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80'
+    },
+    {
+        name: 'Lindsay Walton',
+        position: 'Front-end Developer',
+        location: 'London, England',
+        image: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80'
+    },
+    {
+        name: 'Courtney Henry',
+        position: 'Designer',
+        location: 'Toronto, Canada',
+        image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80'
+    },
+    {
+        name: 'Tom Cook',
+        position: 'Director of Product',
+        location: 'Toronto, Canada',
+        image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80'
+    },
+    {
+        name: 'Whitney Francis',
+        position: 'Copywriter',
+        location: 'Toronto, Canada',
+        image: 'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80'
+    },
+    {
+        name: 'Leonard Krasner',
+        position: 'Senior Designer',
+        location: 'Toronto, Canada',
+        image: 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80'
     }
 ];
 
