@@ -1,4 +1,6 @@
-import photo from "../assets/group.jpg"
+import p1 from "../assets/group.jpg"
+import p2 from "../assets/group2.jpg"
+import p3 from "../assets/group3.jpg"
 
 const Gallery = () => {
 
@@ -16,7 +18,9 @@ const Gallery = () => {
         <div className="img-container flex-col justify-items-center	">
 
 
-         <img className="m-3 rounded-lg w-10/12"src={photo} alt="group"  />
+         <img className="m-3 rounded-lg w-10/12"src={p1} alt="group"  />
+         <img className="m-3 rounded-lg w-10/12"src={p2} alt="group"  />
+         <img className="m-3 rounded-lg w-10/12"src={p3} alt="group"  />
         
         </div>
       </div>

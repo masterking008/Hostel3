@@ -5,7 +5,7 @@ import GSec from '../assets/gsec.jpg'
 import SportsCo from '../assets/sports.jpg'
 import TechCo from '../assets/tech.jpg'
 import CultCo from '../assets/cult.jpg'
-// import MessCo from '../assets/mess.jpg'
+import MessCo from '../assets/mess.jpg'
 const AboutPage = () => {
     return (
         <>
@@ -16,7 +16,7 @@ const AboutPage = () => {
                             Hostel 3 Council                        </h2>
                     </div>
 
-                    <div className="rounded-2xl bg-slate-200  shadow-xl shadow-slate-900/10 m-3 p-4 pb-8 text-center hover:shadow-xl transition-all duration-300" // Darker shadow on hover
+                    <div className="rounded-2xl bg-slate-200  shadow-xl shadow-slate-900/10 m-6 p-4 pb-8 text-center hover:shadow-xl transition-all duration-300" // Darker shadow on hover
                     >
                         <div>
                             <h2 className="m-3 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
@@ -24,10 +24,10 @@ const AboutPage = () => {
                         </div>
                         <div className='flex justify-center'>
 
-                            <div className="rounded-2xl bg-white shadow-xl w-64 m-6 shadow-slate-900/10 p-4 text-center hover:bg-gray-700 hover:shadow-xl hover:w-80 transition-all duration-300" // Darker shadow on hover
+                            <div className="rounded-2xl bg-white shadow-xl w-64 m-6 shadow-slate-900/10 p-4 text-center hover:bg-gray-700 hover:shadow-xl hover:scale-110 transition-all duration-300" // Darker shadow on hover
                             >
                                 <img
-                                    className="w-48 h-48 rounded-full mx-auto mb-4  " // Image size
+                                    className="w-48 h-48 rounded-full mx-auto mb-4 object-cover	 " // Image size
                                     src={GSec}
                                     alt="Gsec"
                                 />
@@ -49,7 +49,7 @@ const AboutPage = () => {
 
                     </div>
 
-                    <div className="rounded-2xl bg-slate-200  shadow-xl shadow-slate-900/10 m-3 p-4 pb-8 text-center hover:shadow-xl transition-all duration-300" // Darker shadow on hover
+                    <div className="rounded-2xl bg-slate-200  shadow-xl shadow-slate-900/10 m-6 p-4 pb-8 text-center hover:shadow-xl transition-all duration-300" // Darker shadow on hover
                     >
                         <div>
                             <h2 className="m-3 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
@@ -57,22 +57,22 @@ const AboutPage = () => {
                         </div>
                         <div className='flex justify-center'>
 
-                            <div className="rounded-2xl bg-white shadow-xl w-64 m-6 shadow-slate-900/10 p-4 text-center hover:bg-gray-700 hover:shadow-xl hover:w-80 transition-all duration-300" // Darker shadow on hover
+                            <div className="rounded-2xl bg-white shadow-xl w-64 m-6 shadow-slate-900/10 p-4 text-center hover:bg-gray-700 hover:shadow-xl hover:scale-110 transition-all duration-300" // Darker shadow on hover
                             >
                                 <img
-                                    className="w-48 h-48 rounded-full mx-auto mb-4  " // Image size
-                                    src={SportsCoCo}
+                                    className="w-48 h-48 rounded-full mx-auto mb-4  object-cover	" // Image size
+                                    src={SportsCo}
                                     alt="SportsCo"
                                 />
                                 <h3 className="mt-2 text-xl leading-6 font-medium text-blue-500">
-                                    Rohan Dubey
+                                    Himanshu choudhary
                                 </h3>
                                 <p className="mt-2 text-lg text-gray-500">
-                                    Maintanance  Counciler                                    </p>
+                                    Sports  Councillor                                    </p>
                                 <p className="mt-2 text-lg text-gray-500">
-                                    9302020069                                </p>
+                                    7355572388                                    </p>
                                 <p className="mt-2 text-lg text-gray-500">
-                                    22b4526@iitb.ac.in                                    </p>
+                                    22b0430@iitb.ac.in                                                                </p>
 
                             </div>
 
@@ -83,7 +83,7 @@ const AboutPage = () => {
                     </div>
 
 
-                    <div className="rounded-2xl bg-slate-200  shadow-xl shadow-slate-900/10 m-3 p-4 pb-8 text-center hover:shadow-xl transition-all duration-300" // Darker shadow on hover
+                    <div className="rounded-2xl bg-slate-200  shadow-xl shadow-slate-900/10 m-6 p-4 pb-8 text-center hover:shadow-xl transition-all duration-300" // Darker shadow on hover
                     >
                         <div>
                             <h2 className="m-3 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
@@ -91,22 +91,22 @@ const AboutPage = () => {
                         </div>
                         <div className='flex justify-center'>
 
-                            <div className="rounded-2xl bg-white shadow-xl w-64 m-6 shadow-slate-900/10 p-4 text-center hover:bg-gray-700 hover:shadow-xl hover:w-80 transition-all duration-300" // Darker shadow on hover
+                            <div className="rounded-2xl bg-white shadow-xl w-64 m-6 shadow-slate-900/10 p-4 text-center hover:bg-gray-700 hover:shadow-xl hover:scale-110 transition-all duration-300" // Darker shadow on hover
                             >
                                 <img
                                     className="w-48 h-48 rounded-full mx-auto mb-4  " // Image size
-                                    src={MaintCo}
-                                    alt="Rohan"
+                                    src={CultCo}
+                                    alt="CultCo"
                                 />
                                 <h3 className="mt-2 text-xl leading-6 font-medium text-blue-500">
-                                    Rohan Dubey
+                                    Subhash Chandra Killo
                                 </h3>
                                 <p className="mt-2 text-lg text-gray-500">
-                                    Maintanance  Counciler                                    </p>
+                                    Cultural  Councillor                                    </p>
                                 <p className="mt-2 text-lg text-gray-500">
-                                    9302020069                                </p>
+                                    9493203341                              </p>
                                 <p className="mt-2 text-lg text-gray-500">
-                                    22b4526@iitb.ac.in                                    </p>
+                                    22b2735@iitb.ac.in                                 </p>
 
                             </div>
 
@@ -115,7 +115,7 @@ const AboutPage = () => {
                         </div>
 
                     </div>
-                    <div className="rounded-2xl bg-slate-200  shadow-xl shadow-slate-900/10 m-3 p-4 pb-8 text-center hover:shadow-xl transition-all duration-300" // Darker shadow on hover
+                    <div className="rounded-2xl bg-slate-200  shadow-xl shadow-slate-900/10 m-6 p-4 pb-8 text-center hover:shadow-xl transition-all duration-300" // Darker shadow on hover
                     >
                         <div>
                             <h2 className="m-3 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
@@ -123,22 +123,22 @@ const AboutPage = () => {
                         </div>
                         <div className='flex justify-center'>
 
-                            <div className="rounded-2xl bg-white shadow-xl w-64 m-6 shadow-slate-900/10 p-4 text-center hover:bg-gray-700 hover:shadow-xl hover:w-80 transition-all duration-300" // Darker shadow on hover
+                            <div className="rounded-2xl bg-white shadow-xl w-64 m-6 shadow-slate-900/10 p-4 text-center hover:bg-gray-700 hover:shadow-xl hover:scale-110 transition-all duration-300" // Darker shadow on hover
                             >
                                 <img
-                                    className="w-48 h-48 rounded-full mx-auto mb-4  " // Image size
-                                    src={MaintCo}
-                                    alt="Rohan"
+                                    className="w-48 h-48 rounded-full mx-auto mb-4  object-cover	" // Image size
+                                    src={TechCo}
+                                    alt="TechCo"
                                 />
                                 <h3 className="mt-2 text-xl leading-6 font-medium text-blue-500">
-                                    Rohan Dubey
-                                </h3>
+                                    Sarvesh Patil                                </h3>
                                 <p className="mt-2 text-lg text-gray-500">
-                                    Maintanance  Counciler                                    </p>
+                                    Technical  Councillor                                    </p>
                                 <p className="mt-2 text-lg text-gray-500">
-                                    9302020069                                </p>
+                                    9423034000                                </p>
                                 <p className="mt-2 text-lg text-gray-500">
-                                    22b4526@iitb.ac.in                                    </p>
+                                    22b2276@iitb.ac.in
+                                </p>
 
                             </div>
 
@@ -147,7 +147,7 @@ const AboutPage = () => {
                         </div>
 
                     </div>
-                    <div className="rounded-2xl bg-slate-200  shadow-xl shadow-slate-900/10 m-3 p-4 pb-8 text-center hover:shadow-xl transition-all duration-300" // Darker shadow on hover
+                    <div className="rounded-2xl bg-slate-200  shadow-xl shadow-slate-900/10 m-6 p-4 pb-8 text-center hover:shadow-xl transition-all duration-300" // Darker shadow on hover
                     >
                         <div>
                             <h2 className="m-3 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
@@ -155,18 +155,17 @@ const AboutPage = () => {
                         </div>
                         <div className='flex justify-center'>
 
-                            <div className="rounded-2xl bg-white shadow-xl w-64 m-6 shadow-slate-900/10 p-4 text-center hover:bg-gray-700 hover:shadow-xl hover:w-80 transition-all duration-300" // Darker shadow on hover
+                            <div className="rounded-2xl bg-white shadow-xl w-64 m-6 shadow-slate-900/10 p-4 text-center hover:bg-gray-700 hover:shadow-xl hover:scale-110 transition-all duration-300" // Darker shadow on hover
                             >
                                 <img
                                     className="w-48 h-48 rounded-full mx-auto mb-4  " // Image size
-                                    src={MaintCo}
+                                    src={MessCo}
                                     alt="Rohan"
                                 />
                                 <h3 className="mt-2 text-xl leading-6 font-medium text-blue-500">
-                                    Rohan Dubey
-                                </h3>
+                                    Shubham Meena                                </h3>
                                 <p className="mt-2 text-lg text-gray-500">
-                                    Maintanance  Counciler                                    </p>
+                                    Mess  Councillor                                    </p>
                                 <p className="mt-2 text-lg text-gray-500">
                                     9302020069                                </p>
                                 <p className="mt-2 text-lg text-gray-500">
@@ -179,7 +178,7 @@ const AboutPage = () => {
                         </div>
 
                     </div>
-                    <div className="rounded-2xl bg-slate-200  shadow-xl shadow-slate-900/10 m-3 p-4 pb-8 text-center hover:shadow-xl transition-all duration-300" // Darker shadow on hover
+                    <div className="rounded-2xl bg-slate-200  shadow-xl shadow-slate-900/10 m-6 p-4 pb-8 text-center hover:shadow-xl transition-all duration-300" // Darker shadow on hover
                     >
                         <div>
                             <h2 className="m-3 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
@@ -187,7 +186,7 @@ const AboutPage = () => {
                         </div>
                         <div className='flex justify-center'>
 
-                            <div className="rounded-2xl bg-white shadow-xl w-64 m-6 shadow-slate-900/10 p-4 text-center hover:bg-gray-700 hover:shadow-xl hover:w-80 transition-all duration-300" // Darker shadow on hover
+                            <div className="rounded-2xl bg-white shadow-xl w-64 m-6 shadow-slate-900/10 p-4 text-center hover:bg-gray-700 hover:shadow-xl hover:scale-110 transition-all duration-300" // Darker shadow on hover
                             >
                                 <img
                                     className="w-48 h-48 rounded-full mx-auto mb-4  " // Image size
@@ -198,7 +197,7 @@ const AboutPage = () => {
                                     Rohan Dubey
                                 </h3>
                                 <p className="mt-2 text-lg text-gray-500">
-                                    Maintanance  Counciler                                    </p>
+                                    Maintanance  Councillor                                    </p>
                                 <p className="mt-2 text-lg text-gray-500">
                                     9302020069                                </p>
                                 <p className="mt-2 text-lg text-gray-500">

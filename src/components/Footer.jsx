@@ -164,7 +164,7 @@ const Footer = () => {
                             </ul>
                         </div> */}
 
-                        <div className=" text-left">
+                        <div className=" text-left ml-10">
                             <p className="text-lg font-medium text-slate-100">Contact Us</p>
 
                             <ul className="mt-8 -ml-7 space-y-4 text-sm">
