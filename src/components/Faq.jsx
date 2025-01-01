@@ -11,19 +11,8 @@ const FAQ = () => {
         <section
             id="faq"
             aria-labelledby="faq-title"
-            className="relative overflow-hidden bg-slate-900 py-20 sm:py-32"
-        >
-            {/* <img
-                alt=""
-                loading="lazy"
-                width={1558}
-                height={946}
-                decoding="async"
-                data-nimg={1}
-                className="absolute left-1/2 top-0 max-w-none -translate-y-1/4 translate-x-[-30%]"
-                style={{ color: "transparent" }}
-                src="https://salient.tailwindui.com/_next/static/media/background-faqs.55d2e36a.jpg"
-            /> */}
+            className="relative overflow-hidden bg-black/25 backdrop-blur-3xl rounded-3xl py-20 sm:py-32 m-5 sm:m-10 border border-white/10 shadow-lg"
+            >
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
                 <div className="mx-auto max-w-2xl lg:mx-0">
                     <h2
@@ -33,11 +22,11 @@ const FAQ = () => {
                         Frequently asked questions
                     </h2>
                     <p className="mt-10 text-lg tracking-tight text-slate-200">
-                       Hostel 3
+                        Hostel 3
                     </p>
                 </div>
                 <section className="mt-10">
-                    <dl className="mt-3 divide-y divide-gray-800">
+                    <dl className="mt-3 divide-y divide-slate-700">
                         {faqData.map((faq, index) => (
                             <div key={index} className="py-4">
                                 <summary

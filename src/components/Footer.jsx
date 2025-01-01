@@ -3,7 +3,9 @@ import Logo from "../assets/logo.png"
 
 const Footer = () => {
     return (
-        <footer className="bg-slate-900 border-t border-gray-800">
+        <footer className="bg-slate-900/30 backdrop-blur-3xl relative">
+            <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[rgba(221,214,254,0.15)] to-transparent"></div>
+
             <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-6 sm:px-6 lg:px-8 lg:pt-24">
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
                     <div>
@@ -17,7 +19,7 @@ const Footer = () => {
                         </div>
 
                         <p className="mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left">
-                        Official Website of Hostel 3, IIT Bombay
+                            Official Website of Hostel 3, IIT Bombay
                         </p>
 
                         <ul className="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
@@ -192,9 +194,9 @@ const Footer = () => {
                                     </svg>
 
                                     <address className="-mt-0.5 flex-1 not-italic text-slate-400 ">
-                                    Hostel 3, IIT Bombay,
-                                    Powai , Mumbai,
-                                    Maharashtra - 400076
+                                        Hostel 3, IIT Bombay,
+                                        Powai , Mumbai,
+                                        Maharashtra - 400076
                                     </address>
                                 </li>
                                 <li>
@@ -220,8 +222,8 @@ const Footer = () => {
                                         <span className="flex-1 text-slate-400 ">gsech3@iitb.ac.in</span>
                                     </a>
                                 </li>
-                            
-                                 <li>
+
+                                <li>
                                     <a
                                         className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                                         href="#"
@@ -243,7 +245,7 @@ const Footer = () => {
 
                                         <span className="flex-1 text-slate-400 ">+91 (22) 2576 2603</span>
                                     </a>
-                                </li> 
+                                </li>
 
 
                             </ul>
@@ -252,14 +254,8 @@ const Footer = () => {
                 </div>
 
                 <div className="mt-12 border-t border-gray-800 pt-6">
-                    <div className="text-center sm:flex sm:justify-between sm:text-left">
-                        <p className="text-sm text-slate-400 ">
-                            <span className="block sm:inline">All rights reserved.</span>
-
-
-                        </p>
-
-                        <p className="mt-4 text-sm text-slate-400 sm:order-first sm:mt-0">&copy; 2024 HOSTEL 3, IIT Bombay</p>
+                    <div className="text-center">
+                        <p className="mt-4 text-sm text-slate-400 sm:order-first sm:mt-0">&copy;2025 HOSTEL 3, IIT Bombay. All rights reserved.</p>
                     </div>
                 </div>
             </div>

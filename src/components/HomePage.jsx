@@ -3,15 +3,15 @@ import ActivitySection from "./Activity";
 import FAQ from "./Faq";
 import HeroSection from "./Hero";
 
-
 export default function HomePage() {
-    return (
-      <>
-      <HeroSection/>
+  return (
+    <>
+     
+      <HeroSection />
       {/* <Announcements/> */}
       {/* <ActivitySection/> */}
-      <FAQ/>
+      <FAQ />
 
-      </>
-    )
-  }
+    </>
+  )
+}
