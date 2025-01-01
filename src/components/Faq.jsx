@@ -11,22 +11,22 @@ const FAQ = () => {
         <section
             id="faq"
             aria-labelledby="faq-title"
-            className="relative overflow-hidden bg-black/25 backdrop-blur-3xl rounded-3xl py-20 sm:py-32 m-5 sm:m-10 border border-white/10 shadow-lg"
+            className="relative overflow-hidden bg-black/25 backdrop-blur-3xl rounded-3xl py-16 px-2 sm:px-0 sm:py-32 m-3 sm:m-10 border border-white/10 shadow-lg"
             >
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
                 <div className="mx-auto max-w-2xl lg:mx-0">
                     <h2
                         id="faq-title"
-                        className="font-lexend text-3xl tracking-tight text-slate-100 sm:text-[40px]"
+                        className="font-lexend text-3xl text-center sm:text-start tracking-tight text-slate-100 sm:text-[40px]"
                     >
                         Frequently asked questions
                     </h2>
-                    <p className="mt-10 text-lg tracking-tight text-slate-200">
+                    <p className="font-lexend mt-10 text-center sm:text-start text-2xl tracking-tight text-slate-200">
                         Hostel 3
                     </p>
                 </div>
                 <section className="mt-10">
-                    <dl className="mt-3 divide-y divide-slate-700">
+                    <dl className="mt-3 divide-y divide-white/10">
                         {faqData.map((faq, index) => (
                             <div key={index} className="py-4">
                                 <summary
@@ -35,7 +35,7 @@ const FAQ = () => {
                                 >
                                     {faq.question}
                                     <svg
-                                        className={`ml-4 mt-0.5 h-6 w-6 flex-none stroke-slate-700 transition-transform duration-300 ease-in-out ${openIndex === index ? "rotate-180" : ""
+                                        className={`ml-4 mt-0.5 h-6 w-6 flex-none stroke-slate-100 transition-transform duration-300 ease-in-out ${openIndex === index ? "rotate-180" : ""
                                             }`}
                                         fill="none"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +69,7 @@ const FAQ = () => {
 const faqData = [
     {
         question: "How are the students allotted their respective hostels?",
-        answer: 'Hostel Affairs Council along with the Gsecs of different hostels will decide this.',
+        answer: 'Hostel Affairs Council along with the GSecs of different hostels will decide this.',
     },
     {
         question: "How can I apply for Mess Rebate?",

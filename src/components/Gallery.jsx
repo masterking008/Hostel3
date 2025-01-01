@@ -102,9 +102,10 @@ const Gallery = () => {
             <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-slate-100"></div>
           </div>
         ) : activeAlbum ? (
-          <div className="w-full px-10">
+          <div 
+          className=" bg-black/25 backdrop-blur-3xl rounded-3xl p-5 sm:p-10 m-5 sm:m-10 border border-white/10 shadow-lg">
             <button
-              className="text-gray-50 font-medium mb-4"
+              className="text-gray-50 text-3xl font-medium mb-4"
               onClick={() => setActiveAlbum(null)}
             >
               ← Back to Albums
