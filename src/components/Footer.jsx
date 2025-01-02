@@ -90,7 +90,7 @@ const Footer = () => {
 
 
 
-                        <div className="text-left">
+                        <div className="text-left ">
                             <p className="text-lg font-medium text-slate-100">Helpful Links</p>
 
                             <ul className="mt-8 space-y-4 text-sm">
@@ -125,16 +125,14 @@ const Footer = () => {
                             </ul>
                         </div>
 
-                        <div className=" text-left ml-5">
-                            <p className="text-lg font-medium text-slate-100">Contact Us</p>
+                        <div className="text-left px-10 sm:p-0 sm:col-span-1 col-span-2 flex flex-col items-center sm:items-start">
+                            <p className="text-lg sm:ml-7 font-medium text-slate-100 text-center sm:text-left">Contact Us</p>
 
-                            <ul className="mt-8 -ml-7 space-y-4 text-sm">
-                                <li
-                                    className="flex items-start  justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                                >
+                            <ul className="mt-8 space-y-4 text-sm">
+                                <li className="flex items-center justify-center gap-2 sm:justify-start">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        className="size-5 shrink-0 text-slate-100"
+                                        className="w-5 h-5 shrink-0 text-slate-100"
                                         fill="none"
                                         viewBox="0 0 24 24"
                                         stroke="currentColor"
@@ -151,69 +149,68 @@ const Footer = () => {
                                             d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                                         />
                                     </svg>
-
-                                    <a className="-mt-0.5 flex-1 not-italic text-slate-400 " href="https://maps.app.goo.gl/Qv6gGW3xbHguVZrv7" target="_blank"
-                                        rel="noopener noreferrer">
-                                        Hostel 3, IIT Bombay,
-                                        Powai , Mumbai,
-                                        Maharashtra - 400076
+                                    <a
+                                        className="flex-1 text-slate-400"
+                                        href="https://maps.app.goo.gl/Qv6gGW3xbHguVZrv7"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Hostel 3, IIT Bombay, Powai, Mumbai, Maharashtra - 400076
                                     </a>
                                 </li>
-                                <li>
+
+                                <li className="flex items-center justify-center gap-2 sm:justify-start">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        className="w-5 h-5 shrink-0 text-slate-100"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                        strokeWidth="2"
+                                    >
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                                        />
+                                    </svg>
                                     <a
-                                        className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                                        className="flex-1 text-slate-400"
                                         href="mailto:gsech3@iitb.ac.in"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            className="size-5 shrink-0 text-slate-100"
-                                            fill="none"
-                                            viewBox="0 0 24 24"
-                                            stroke="currentColor"
-                                            strokeWidth="2"
-                                        >
-                                            <path
-                                                strokeLinecap="round"
-                                                strokeLinejoin="round"
-                                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                                            />
-                                        </svg>
-
-                                        <span className="flex-1 text-slate-400 ">gsech3@iitb.ac.in</span>
+                                        gsech3@iitb.ac.in
                                     </a>
                                 </li>
 
-                                <li>
+                                <li className="flex items-center justify-center gap-2 sm:justify-start">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        className="w-5 h-5 shrink-0 text-slate-100"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                        strokeWidth="2"
+                                    >
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                                        />
+                                    </svg>
                                     <a
-                                        className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                                        className="flex-1 text-slate-400"
                                         href="tel:+912225762603"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            className="size-5 shrink-0 text-slate-100"
-                                            fill="none"
-                                            viewBox="0 0 24 24"
-                                            stroke="currentColor"
-                                            strokeWidth="2"
-                                        >
-                                            <path
-                                                strokeLinecap="round"
-                                                strokeLinejoin="round"
-                                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                                            />
-                                        </svg>
-
-                                        <span className="flex-1 text-slate-400 ">+91 (22) 2576 2603</span>
+                                        +91 (22) 2576 2603
                                     </a>
                                 </li>
-
-
                             </ul>
                         </div>
+
                         <div className="map">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1445.9126985609976!2d72.91164879555505!3d19.136898090547316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b808655be825%3A0xf7f36949991bb60!2sHostel%203%2C%20IIT%20Bombay!5e0!3m2!1sen!2sin!4v1735820605868!5m2!1sen!2sin&maptype=roadmap&zoom=15&disableDefaultUI=true&scrollwheel=false&fullscreenControl=false&zoomControl=false"
@@ -243,6 +240,8 @@ const Footer = () => {
                         </iframe>
                     </div>
                 </div>
+
+
 
                 <div className="mt-12 border-t border-white/10 pt-6">
                     <div className="text-center">
