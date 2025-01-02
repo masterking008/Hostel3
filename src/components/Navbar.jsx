@@ -46,7 +46,7 @@ export default function Navbar() {
     return (
         <>
             <header
-                className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${navbarBlur
+                className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out ${navbarBlur
                     ? 'backdrop-blur-3xl'
                     : 'bg-transparent'
                     } `}
@@ -77,25 +77,22 @@ export default function Navbar() {
                         <a href="./" className="text-sm font-semibold leading-6 text-slate-100">
                             HOME
                         </a>
-                        <a href="./About" className="text-sm font-semibold leading-6 text-slate-100">
-                            ABOUT US
-                        </a>
                         <a href="./Gallery" className="text-sm font-semibold leading-6 text-slate-100">
                             GALLERY                    </a>
-                        <a href="./Contact" className="text-sm font-semibold leading-6 text-slate-100">
-                            SPORTS
-                        </a>
-                        <a href="./Contact" className="text-sm font-semibold leading-6 text-slate-100">
-                            CULTURAL
-                        </a>
-                        <a href="./Contact" className="text-sm font-semibold leading-6 text-slate-100">
-                            TECH
-                        </a>
-                        <a href="./Contact" className="text-sm font-semibold leading-6 text-slate-100">
+                        <a href="./Mess" className="text-sm font-semibold leading-6 text-slate-100">
                             MESS
                         </a>
-                        <a href="./Contact" className="text-sm font-semibold leading-6 text-slate-100">
-                            CONTACT
+                        <a href="./Sports" className="text-sm font-semibold leading-6 text-slate-100">
+                            SPORTS
+                        </a>
+                        <a href="./Cultural" className="text-sm font-semibold leading-6 text-slate-100">
+                            CULTURAL
+                        </a>
+                        <a href="./Tech" className="text-sm font-semibold leading-6 text-slate-100">
+                            TECH
+                        </a>
+                        <a href="./About" className="text-sm font-semibold leading-6 text-slate-100">
+                            ABOUT US
                         </a>
                         {/* <Popover className="relative">
                         <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-slate-100 focus:outline-none" >
@@ -163,30 +160,8 @@ export default function Navbar() {
                                     >
                                         ABOUT US
                                     </a>
-                                    <a
-                                        href="#"
-                                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-100 hover:bg-gray-50"
-                                    >
-                                        CONTACT
-                                    </a>
-                                    <Disclosure as="div" className="-mx-3">
-                                        <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-slate-100 hover:bg-gray-50">
-                                            USEFUL LINKS
-                                            <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none group-data-[open]:rotate-180" />
-                                        </DisclosureButton>
-                                        <DisclosurePanel className="mt-2 space-y-2">
-                                            {[...items].map((item) => (
-                                                <DisclosureButton
-                                                    key={item.name}
-                                                    as="a"
-                                                    href={item.href}
-                                                    className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-slate-100 hover:bg-gray-50"
-                                                >
-                                                    {item.name}
-                                                </DisclosureButton>
-                                            ))}
-                                        </DisclosurePanel>
-                                    </Disclosure>
+                                 
+                                    
                                 </div>
 
                             </div>

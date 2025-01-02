@@ -9,7 +9,7 @@ const FAQ = () => {
 
     return (
         <section
-            id="faq"
+            id="FAQs"
             aria-labelledby="faq-title"
             className="relative overflow-hidden bg-black/25 backdrop-blur-3xl rounded-3xl py-16 px-2 sm:px-0 sm:py-32 m-3 sm:m-10 border border-white/10 shadow-lg"
             >
@@ -19,7 +19,7 @@ const FAQ = () => {
                         id="faq-title"
                         className="font-lexend text-3xl text-center sm:text-start tracking-tight text-slate-100 sm:text-[40px]"
                     >
-                        Frequently asked questions
+                        FAQs
                     </h2>
                     <p className="font-lexend mt-10 text-center sm:text-start text-2xl tracking-tight text-slate-200">
                         Hostel 3
