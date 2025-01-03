@@ -109,7 +109,7 @@ const Gallery = () => {
           >
             ← Back to Albums
           </button>
-          <h2 className="text-center text-3xl font-bold text-slate-100 mb-6">
+          <h2 className="text-center text-3xl font-bold text-slate-100 m-6 sm:mb-4 sm:mt-0">
             {activeAlbum.title}
           </h2>
           <div className="flex justify-center items-center flex-wrap">

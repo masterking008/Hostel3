@@ -76,7 +76,7 @@ export default function Navbar() {
               SPORTS
             </a>
             <a
-              href="./Cultural"
+              href="./Culturals"
               className="text-sm font-semibold leading-6 text-slate-100 hover:text-blue-400"
             >
               CULTURAL
@@ -153,7 +153,7 @@ export default function Navbar() {
                 SPORTS
               </a>
               <a
-                href="./Cultural"
+                href="./Culturals"
                 className="block w-full rounded-lg px-3 py-4 text-lg font-semibold hover:bg-gray-700/30"
               >
                 CULTURAL

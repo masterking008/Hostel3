@@ -4,8 +4,8 @@ const API_KEY = 'AIzaSyC1lTT_RGPic5Br-cJU0FVrV3LwnS4pQTE';
 const SHEET_ID = '1EMPNnc-5QZXgCBDkY667j0U5Il_mJmAocxNNgldM1V8';
 
 const Card = ({ entry }) => (
-    <div className="card my-10 mx-5 h-80 w-64">
-        <div className="card__side card__side--front bg-black/25 backdrop-blur-3xl rounded-3xl shadow-xl shadow-slate-900/10 border border-white/10  p-4 text-center transition-all duration-300  h-80 w-64">
+    <div className="card my-10 mx-5 h-80 w-64 scale-[1.15] sm:scale-100">
+        <div className="card__side card__side--front bg-black/25 backdrop-blur-3xl rounded-3xl shadow-xl shadow-slate-900/10 border border-white/10 p-4 text-center transition-all duration-300 h-80 w-64">
             <img
                 className="w-48 h-48 rounded-full mx-auto mb-4 object-cover border border-white/10"
                 src={entry.image}
@@ -14,7 +14,7 @@ const Card = ({ entry }) => (
             <h3 className="mt-2 text-xl leading-6 font-bold text-slate-100">{entry.name}</h3>
             <p className="mt-2 text-lg font-lexend text-gray-400">{entry.position}</p>
         </div>
-        <div className="card__side card__side--back flex flex-col justify-center items-center bg-black/25 backdrop-blur-3xl rounded-3xl shadow-xl shadow-slate-900/10 border border-white/10 p-4 text-center transition-all duration-300  h-80 w-64">
+        <div className="card__side card__side--back flex flex-col justify-center items-center bg-black/25 backdrop-blur-3xl rounded-3xl shadow-xl shadow-slate-900/10 border border-white/10 p-4 text-center transition-all duration-300 h-80 w-64">
 
             <p className="flex items-center justify-center mt-2 text-lg font-lexend text-gray-400">
                 <svg
@@ -58,9 +58,11 @@ const Card = ({ entry }) => (
 
 const TeamSection = () => {
     const [data, setData] = useState({});
+    const [loading, setLoading] = useState(true);
     const roles = [
         { name: 'Warden and Associate Warden', key: 'W' },
         { name: 'Hall Manager', key: 'HM' },
+        { name: 'Council Members', key: 'Council' },
         { name: 'Councillors', key: 'Councillors' },
     ];
 
@@ -92,28 +94,36 @@ const TeamSection = () => {
                 newData[role.key] = await fetchData(role.key);
             }
             setData(newData);
+            setLoading(false); // Set loading to false once data is fetched
         })();
     }, []);
 
     return (
-        <div className=" py-16 shadow-inner">
+        <div className="py-16 shadow-inner">
             <div className="text-center">
                 <h2 className="my-5 text-3xl leading-8 font-extrabold tracking-tight text-gray-50 sm:text-4xl">
                     Hostel 3 Council
                 </h2>
             </div>
-            {roles.map((role) => (
-                <div key={role.key}>
-                    <h2 className="text-center m-3 text-3xl leading-8 font-extrabold tracking-tight text-slate-100 sm:text-4xl">
-                        {role.name}
-                    </h2>
-                    <div className="flex justify-center items-center flex-wrap">
-                        {data[role.key]?.map((entry, index) => (
-                            <Card entry={entry} key={index} />
-                        ))}
-                    </div>
+
+            {loading ? (
+                <div className="flex justify-center items-center py-10">
+                    <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-slate-100"></div>
                 </div>
-            ))}
+            ) : (
+                roles.map((role) => (
+                    <div key={role.key}>
+                        <h2 className="text-center m-3 text-3xl leading-8 font-extrabold tracking-tight text-slate-100 sm:text-4xl">
+                            {role.name}
+                        </h2>
+                        <div className="flex justify-center items-center flex-wrap">
+                            {data[role.key]?.map((entry, index) => (
+                                <Card entry={entry} key={index} />
+                            ))}
+                        </div>
+                    </div>
+                ))
+            )}
         </div>
     );
 };

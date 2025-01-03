@@ -7,6 +7,10 @@ import HomePage from "./components/HomePage";
 import Gallery from "./components/Gallery";
 import "./App.css";
 import bgi from "./assets/bg.jpg";
+import MessPage from "./components/Mess";
+import SportsPage from "./components/Sports";
+import TechnicalsPage from "./components/Technical";
+import CulturalsPage from "./components/Cultural";
 
 export default function App() {
   return (
@@ -24,8 +28,12 @@ export default function App() {
       {/* Application Routes */}
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/Gallery" element={<Gallery />} />
+        <Route path="/Mess" element={<MessPage />} />
+        <Route path="/Culturals" element={<CulturalsPage />} />
+        <Route path="/Sports" element={<SportsPage />} />
+        <Route path="/Tech" element={<TechnicalsPage />} />
+        <Route path="/About" element={<AboutPage />} />
         <Route path="/*" element={<ErrorPage />} />
       </Routes>
 
