@@ -76,7 +76,7 @@ const Gallery = () => {
       collageImages.push(...images.slice(0, 4 - collageImages.length));
     }
     return (
-      <div className="grid grid-cols-2 grid-rows-2 w-80 h-80 rounded-lg border border-white/10 overflow-hidden m-2 transition-transform duration-1000 ease-in-out">
+      <div className="grid grid-cols-2 grid-rows-2 w-80 h-80 rounded-2xl border border-white/10 overflow-hidden m-2 transition-transform duration-1000 ease-in-out">
         {collageImages.map((img, index) => (
           <img
             key={index}
@@ -102,41 +102,45 @@ const Gallery = () => {
             <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-slate-100"></div>
           </div>
         ) : activeAlbum ? (
-          <div 
-          className=" bg-black/25 backdrop-blur-3xl rounded-3xl p-5 sm:p-10 m-5 sm:m-10 border border-white/10 shadow-lg">
-            <button
-              className="text-gray-50 text-3xl font-medium mb-4"
-              onClick={() => setActiveAlbum(null)}
-            >
-              ← Back to Albums
-            </button>
-            <div className="flex justify-center items-center flex-wrap">
-              {activeAlbum.images.map((img, index) => (
-                <div
-                  className="overflow-hidden relative max-w-none group block"
-                  key={index}
-                  onClick={() => openModal(img.image)}
-                >
-                  <img
-                    src={img.image}
-                    alt={img.description}
-                    loading="lazy"
-                    className="w-80 h-80 object-cover rounded-lg m-2 group-hover:brightness-[75%]"
-                  />
-                  <div className="text-center max-w-[90%] w-max items-center justify-center flex duration-100 ease-out opacity-0 left-1/2 translate-x-[-50%] bottom-2 px-3 py-2 z-10 font-medium text-xs uppercase bg-black/25 backdrop-blur-xl rounded-2xl text-white absolute translate-y-2 group-hover:opacity-100 group-hover:-translate-y-2">
-                    {img.description}
-                  </div>
+          <div className="bg-black/25 backdrop-blur-3xl rounded-3xl p-5 sm:p-10 m-5 sm:m-10 border border-white/10 shadow-lg">
+          <button
+            className="text-gray-50 text-xl font-medium"
+            onClick={() => setActiveAlbum(null)}
+          >
+            ← Back to Albums
+          </button>
+          <h2 className="text-center text-3xl font-bold text-slate-100 mb-6">
+            {activeAlbum.title}
+          </h2>
+          <div className="flex justify-center items-center flex-wrap">
+            {activeAlbum.images.map((img, index) => (
+              <div
+                className="overflow-hidden relative max-w-none group block"
+                key={index}
+                onClick={() => openModal(img.image)}
+              >
+                <img
+                  src={img.image}
+                  alt={img.description}
+                  loading="lazy"
+                  className="w-80 h-80 object-cover rounded-2xl m-2 group-hover:brightness-[75%]"
+                />
+                <div className="text-center max-w-[90%] w-max items-center justify-center flex duration-100 ease-out opacity-0 left-1/2 translate-x-[-50%] bottom-2 px-3 py-2 z-10 font-medium text-xs uppercase bg-black/25 backdrop-blur-xl rounded-2xl text-white absolute translate-y-2 group-hover:opacity-100 group-hover:-translate-y-2">
+                  {img.description}
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
+        </div>
+        
+            
         ) : (
           <div className="gallery-container w-full overflow-hidden p-10">
             <div className="flex justify-center items-center flex-wrap">
               {albums.map((album, index) => (
                 <div
                   key={index}
-                  className="cursor-pointer hover:scale-105 transition ease-in-out duration-150 border border-white/10 bg-black/25 backdrop-blur-3xl rounded-2xl p-1 m-4"
+                  className="cursor-pointer hover:scale-105 transition ease-in-out duration-150 border border-white/10 bg-black/25 backdrop-blur-3xl rounded-3xl p-1 m-4"
                   onClick={() => openAlbum(album)}
                 >
                   {generateCollage(album.images)}
@@ -156,14 +160,14 @@ const Gallery = () => {
           onClick={closeModal}
         >
           <div
-            className="max-w-4xl rounded-lg"
+            className="max-w-4xl rounded-2xl"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="w-full rounded-xl p-2 bg-white/10 backdrop-blur-3xl  border border-white/10" >
-              <img src={currentImage} alt="Large view" className="w-full rounded-lg  border border-white/10" />
+            <div className="w-full rounded-2xl p-2 bg-white/10 backdrop-blur-3xl  border border-white/10" >
+              <img src={currentImage} alt="Large view" className="w-full rounded-xl  border border-white/10" />
             </div>
             <button
-              className="absolute top-10 right-10 font-lexend text-white text-3xl border border-white/10 px-4 py-3 rounded-3xl bg-white/10 backdrop-blur-3xl "
+              className="absolute top-10 right-10 font-lexend text-white text-2xl border border-white/10 px-4 py-3 rounded-3xl bg-white/10 backdrop-blur-3xl "
               onClick={closeModal}
             >
               X

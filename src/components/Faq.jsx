@@ -11,7 +11,7 @@ const FAQ = () => {
         <section
             id="FAQs"
             aria-labelledby="faq-title"
-            className="relative overflow-hidden bg-black/25 backdrop-blur-3xl rounded-3xl py-16 px-2 sm:px-0 sm:py-32 m-3 sm:m-10 border border-white/10 shadow-lg"
+            className="relative overflow-hidden bg-black/25 backdrop-blur-3xl rounded-3xl py-16 px-2 sm:px-0 sm:py-32 m-4 sm:m-10 border border-white/10 shadow-lg"
             >
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
                 <div className="mx-auto max-w-2xl lg:mx-0">

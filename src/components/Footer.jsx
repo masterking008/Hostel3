@@ -3,17 +3,17 @@ import Logo from "../assets/logo.png"
 
 const Footer = () => {
     return (
-        <footer className="bg-black/25 backdrop-blur-3xl relative">
+        <footer className="bg-black/25 backdrop-blur-3xl relative overflow-hidden">
             <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[rgba(221,214,254,0.15)] to-transparent"></div>
 
             <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-6 sm:px-6 lg:px-8 lg:pt-24">
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-                    <div>
+                    <div className="flex flex-col items-center">
                         <div className="flex justify-center text-blue-600 sm:justify-start">
                             <img
                                 src={Logo}
                                 alt="vitruvians Logo"
-                                className="h-24 w-auto"
+                                className="h-36 w-auto"
                             />
 
                         </div>
@@ -21,6 +21,7 @@ const Footer = () => {
                         <p className="mt-6 max-w-md text-center leading-relaxed text-slate-100 sm:max-w-xs sm:text-left">
                             Official Website of Hostel 3, IIT Bombay
                         </p>
+
 
                         <ul className="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
                             <li>
@@ -62,7 +63,7 @@ const Footer = () => {
                     </div>
 
                     <div className="grid grid-cols-2 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2">
-                        <div className="text-left">
+                        <div className="text-center sm:text-left ">
                             <p className="text-lg font-medium text-slate-100">Links</p>
 
                             <ul className="mt-8 space-y-4 text-sm">
@@ -79,7 +80,7 @@ const Footer = () => {
                                     <a href="./Cultural" class="text-slate-400 transition hover:text-slate-400/75">Cultural</a>
                                 </li>
                                 <li>
-                                    <a href="./Tech" class="text-slate-400 transition hover:text-slate-400/75">Tech</a>
+                                    <a href="./Tech" class="text-slate-400 transition hover:text-slate-400/75">Technical</a>
                                 </li>
                                 <li>
                                     <a href="./About" class="text-slate-400 transition hover:text-slate-400/75">About Us</a>
@@ -90,10 +91,14 @@ const Footer = () => {
 
 
 
-                        <div className="text-left ">
+                        <div className="text-center sm:text-left ">
                             <p className="text-lg font-medium text-slate-100">Helpful Links</p>
 
                             <ul className="mt-8 space-y-4 text-sm">
+                                <li>
+                                    <a href="" class="text-slate-400 transition hover:text-slate-400/75" target="_blank"
+                                        rel="noopener noreferrer">FAQs</a>
+                                </li>
                                 <li>
                                     <a href="https://asc.iitb.ac.in" class="text-slate-400 transition hover:text-slate-400/75" target="_blank"
                                         rel="noopener noreferrer">ASC</a>
@@ -109,10 +114,6 @@ const Footer = () => {
                                 <li>
                                     <a href="https://cc.iitb.ac.in" class="text-slate-400 transition hover:text-slate-400/75" target="_blank"
                                         rel="noopener noreferrer">Computer Center</a>
-                                </li>
-                                <li>
-                                    <a href="" class="text-slate-400 transition hover:text-slate-400/75" target="_blank"
-                                        rel="noopener noreferrer">FAQs</a>
                                 </li>
                                 <li>
                                     <a href="https://portal.iitb.ac.in/asc" class="text-slate-400 transition hover:text-slate-400/75" target="_blank"
@@ -245,6 +246,8 @@ const Footer = () => {
 
                 <div className="mt-12 border-t border-white/10 pt-6">
                     <div className="text-center">
+                        <p className="mt-4 text-sm text-slate-400 sm:order-first sm:mt-0">Made by Dinesh, Web Secretary, H3 Council 2024-25.
+                        </p>
                         <p className="mt-4 text-sm text-slate-400 sm:order-first sm:mt-0">&copy;2025 HOSTEL 3, IIT Bombay. All rights reserved.</p>
                     </div>
                 </div>

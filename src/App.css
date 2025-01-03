@@ -7,6 +7,31 @@ body{
 }
 
 
+
+.card__side {
+
+    transition: all 0.5s ease;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+   /* We don't want to see the back part of the element. */
+    backface-visibility: hidden;
+   /* We don't want to see the back part of the element. */
+    overflow: hidden;
+   /* The image is overflowing the parent. */
+}
+
+.card__side--back {
+    transform: rotateY(180deg);
+}
+.card:hover .card__side--back {
+    transform: rotateY(0);
+}
+.card:hover .card__side--front {
+    transform: rotateY(-180deg);
+}
+
+
+
 /* Slick Carousel CSS */
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
