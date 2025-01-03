@@ -6,7 +6,7 @@ import AboutPage from "./components/AboutPage";
 import HomePage from "./components/HomePage";
 import Gallery from "./components/Gallery";
 import "./App.css";
-import bgi from "./assets/bg.jpg";
+import bgi from "./assets/bg.webp";
 import MessPage from "./components/Mess";
 import SportsPage from "./components/Sports";
 import TechnicalsPage from "./components/Technical";
