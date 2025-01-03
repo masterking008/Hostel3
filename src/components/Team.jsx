@@ -5,7 +5,7 @@ const SHEET_ID = '1EMPNnc-5QZXgCBDkY667j0U5Il_mJmAocxNNgldM1V8';
 
 const Card = ({ entry }) => (
     <div className="card my-10 mx-5 h-80 w-64 scale-[1.15] sm:scale-100">
-        <div className="card__side card__side--front bg-black/25 backdrop-blur-3xl rounded-3xl shadow-xl shadow-slate-900/10 border border-white/10 p-4 text-center transition-all duration-300 h-80 w-64">
+        <div className="card__side card__side--front bg-black/25 backdrop-blur-3xl rounded-3xl shadow-xl shadow-slate-900/10 border border-white/10 p-4 text-center h-80 w-64">
             <img
                 className="w-48 h-48 rounded-full mx-auto mb-4 object-cover border border-white/10"
                 src={entry.image}
@@ -14,7 +14,7 @@ const Card = ({ entry }) => (
             <h3 className="mt-2 text-xl leading-6 font-bold text-slate-100">{entry.name}</h3>
             <p className="mt-2 text-lg font-lexend text-gray-400">{entry.position}</p>
         </div>
-        <div className="card__side card__side--back flex flex-col justify-center items-center bg-black/25 backdrop-blur-3xl rounded-3xl shadow-xl shadow-slate-900/10 border border-white/10 p-4 text-center transition-all duration-300 h-80 w-64">
+        <div className="card__side card__side--back flex flex-col justify-center items-center bg-black/25 backdrop-blur-3xl rounded-3xl shadow-xl shadow-slate-900/10 border border-white/10 p-4 text-center h-80 w-64">
 
             <p className="flex items-center justify-center mt-2 text-lg font-lexend text-gray-400">
                 <svg

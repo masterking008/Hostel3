@@ -94,11 +94,11 @@ function NewsCard({ news }) {
     return (
         <div className="relative flex flex-col sm:flex-row h-auto sm:h-[400px] justify-between rounded-2xl mx-5 bg-black/25 backdrop-blur-3xl border border-white/10 p-6 shadow-xl shadow-slate-900/10">
             {/* Left Side: Image */}
-            <div className="flex-shrink-0 sm:w-1/3 h-48 sm:h-full">
+            <div className="flex-shrink-0 sm:w-1/3 h-48 sm:h-full rounded-2xl overflow-hidden">
                 <img
                     alt={news.name}
                     src="https://img.freepik.com/premium-psd/character-avatar-3d-illustration_460336-706.jpg"
-                    className="h-full w-full object-cover rounded-2xl"
+                    className="h-full w-full object-cover rounded-2xl transform transition-transform duration-500 hover:scale-110"
                 />
             </div>
 

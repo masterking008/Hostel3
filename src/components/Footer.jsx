@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className="bg-black/25 backdrop-blur-3xl relative overflow-hidden">
             <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[rgba(221,214,254,0.15)] to-transparent"></div>
 
-            <div className="mx-auto max-w-screen-2xl px-4 pb-6 pt-6 lg:pt-24">
+            <div className="mx-auto max-w-screen-2xl px-4 pb-6 pt-6 lg:pt-20">
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-4">
                     <div className="flex flex-col items-center">
                         <div className="flex justify-center text-blue-600 sm:justify-start">
@@ -62,7 +62,7 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:col-span-2">
+                    <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:col-span-2 p-5">
                         <div className="text-center sm:text-left ">
                             <p className="text-lg font-medium text-slate-100">Links</p>
 
@@ -211,32 +211,15 @@ const Footer = () => {
                                 </li>
                             </ul>
                         </div>
-
-                        {/* <div className="map">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1445.9126985609976!2d72.91164879555505!3d19.136898090547316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b808655be825%3A0xf7f36949991bb60!2sHostel%203%2C%20IIT%20Bombay!5e0!3m2!1sen!2sin!4v1735820605868!5m2!1sen!2sin&maptype=roadmap&zoom=15&disableDefaultUI=true&scrollwheel=false&fullscreenControl=false&zoomControl=false"
-                                width="300"
-                                height="250"
-                                style={{ border: 0 }}
-                                allowFullScreen
-                                loading="lazy"
-                                referrerPolicy="no-referrer-when-downgrade"
-                                title="Google Maps"
-                                className="hidden rounded-xl border border-white/10 sm:block opacity-45 hover:opacity-100 transition-all duration-300 ease-in-out"
-                            ></iframe>
-                        </div> */}
                     </div>
                     <div className="map flex justify-center">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1445.9126985609976!2d72.91164879555505!3d19.136898090547316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b808655be825%3A0xf7f36949991bb60!2sHostel%203%2C%20IIT%20Bombay!5e0!3m2!1sen!2sin!4v1735820605868!5m2!1sen!2sin&maptype=roadmap&zoom=15&disableDefaultUI=true&scrollwheel=false&fullscreenControl=false&zoomControl=false"
-                            width="300"
-                            height="250"
-                            style={{ border: 0 }}
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1445.9126985609976!2d72.91164879555505!3d19.136898090547316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b808655be825%3A0xf7f36949991bb60!2sHostel%203%2C%20IIT%20Bombay!5e0!3m2!1sen!2sin!"
                             allowFullScreen
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
                             title="Google Maps"
-                            className="rounded-xl border border-white/10 opacity-45 hover:opacity-100 transition-all duration-300 ease-in-out">
+                            className="rounded-xl border border-white/10 opacity-45 hover:opacity-100 transition-all duration-300 ease-in-out w-full max-w-lg h-64 lg:h-auto  lg:max-w-max">
 
                         </iframe>
                     </div>
