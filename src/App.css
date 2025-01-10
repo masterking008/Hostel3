@@ -6,8 +6,6 @@ body{
   background-color: #092941;
 }
 
-
-
 .card__side {
     transition: all 0.5s ease;
     position: absolute;
@@ -30,6 +28,11 @@ body{
 }
 
 
+@media (max-width: 768px) {
+  img {
+    object-position: 73% 0%; /* Adjust this value as needed */
+  }
+}
 
 /* Slick Carousel CSS */
 @import "~slick-carousel/slick/slick.css";

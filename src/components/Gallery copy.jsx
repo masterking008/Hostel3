@@ -5,12 +5,12 @@ const Gallery = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [activeAlbum, setActiveAlbum] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentImage, setCurrentImage] = useState("");
   const [collageIndex, setCollageIndex] = useState(0);
 
-  const API_KEY = "AIzaSyC1lTT_RGPic5Br-cJU0FVrV3LwnS4pQTE";
-  const SHEET_ID = "18e_LWabKDVk9TUjb_Y3rhUzZn7KKenpT3HuEZTfjETw";
-  const SHEET_NAME = "Gallery";
+  const API_KEY = 'AIzaSyC1lTT_RGPic5Br-cJU0FVrV3LwnS4pQTE';
+  const SHEET_ID = '18e_LWabKDVk9TUjb_Y3rhUzZn7KKenpT3HuEZTfjETw';
+  const SHEET_NAME = 'Gallery';
 
   useEffect(() => {
     const fetchData = async () => {
@@ -53,8 +53,8 @@ const Gallery = () => {
     setActiveAlbum(album);
   };
 
-  const openModal = (index) => {
-    setCurrentImageIndex(index);
+  const openModal = (imageSrc) => {
+    setCurrentImage(imageSrc);
     setIsModalOpen(true);
     document.body.style.overflow = "hidden";
   };
@@ -62,18 +62,6 @@ const Gallery = () => {
   const closeModal = () => {
     setIsModalOpen(false);
     document.body.style.overflow = "auto";
-  };
-
-  const nextImage = () => {
-    setCurrentImageIndex((prevIndex) =>
-      (prevIndex + 1) % activeAlbum.images.length
-    );
-  };
-
-  const prevImage = () => {
-    setCurrentImageIndex((prevIndex) =>
-      (prevIndex - 1 + activeAlbum.images.length) % activeAlbum.images.length
-    );
   };
 
   useEffect(() => {
@@ -90,8 +78,9 @@ const Gallery = () => {
     return (
       <div className="grid grid-cols-2 grid-rows-2 w-80 h-80 rounded-2xl overflow-hidden m-2 transition-transform duration-1000 ease-in-out">
         {collageImages.map((img, index) => (
-          <div className="overflow-hidden border border-white/10 " key={index}>
+          <div className="overflow-hidden border border-white/10 ">
             <img
+              key={index}
               src={img.image}
               alt="Collage"
               className="w-full h-full object-cover transform transition-transform duration-300 ease-in-out hover:scale-110 "
@@ -130,13 +119,13 @@ const Gallery = () => {
                 <div
                   className="overflow-hidden relative max-w-none group block"
                   key={index}
-                  onClick={() => openModal(index)}
+                  onClick={() => openModal(img.image)}
                 >
                   <img
                     src={img.image}
                     alt={img.description}
                     loading="lazy"
-                    className="w-80 h-80 object-cover rounded-2xl m-2  border border-white/10 group-hover:brightness-[75%]"
+                    className="w-80 h-80 object-cover rounded-2xl m-2 group-hover:brightness-[75%]"
                   />
                   <div className="text-center max-w-[90%] w-max items-center justify-center flex duration-100 ease-out opacity-0 left-1/2 translate-x-[-50%] bottom-2 px-3 py-2 z-10 font-medium text-xs uppercase bg-black/25 backdrop-blur-xl rounded-2xl text-white absolute translate-y-2 group-hover:opacity-100 group-hover:-translate-y-2">
                     {img.description}
@@ -145,6 +134,8 @@ const Gallery = () => {
               ))}
             </div>
           </div>
+
+
         ) : (
           <div className="gallery-container w-full overflow-hidden p-10">
             <div className="flex justify-center items-center flex-wrap">
@@ -167,37 +158,21 @@ const Gallery = () => {
 
       {isModalOpen && (
         <div
-          className="fixed inset-0 flex justify-center items-center bg-black/25 backdrop-blur-lg z-50 transition-opacity duration-200 ease-in-out"
+          className="fixed inset-0 flex justify-center items-center  bg-black/25 backdrop-blur-lg  z-50 transition-opacity duration-200 ease-in-out"
           onClick={closeModal}
         >
           <div
             className="max-w-4xl rounded-2xl"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="w-full  min-w-0 md:min-w-[600px]  rounded-2xl p-2 bg-white/10 backdrop-blur-3xl border border-white/10">
-              <img
-                src={activeAlbum.images[currentImageIndex].image}
-                alt="Large view"
-                className="w-full rounded-xl border border-white/10"
-              />
+            <div className="w-full rounded-2xl p-2 bg-white/10 backdrop-blur-3xl  border border-white/10" >
+              <img src={currentImage} alt="Large view" className="w-full rounded-xl  border border-white/10" />
             </div>
             <button
-              className="absolute top-10 right-10 text-white text-2xl border border-white/10 px-4 py-3 rounded-3xl bg-white/10 backdrop-blur-3xl"
+              className="absolute top-10 right-10 font-lexend text-white text-2xl border border-white/10 px-4 py-3 rounded-3xl bg-white/10 backdrop-blur-3xl "
               onClick={closeModal}
             >
               X
-            </button>
-            <button
-              className="absolute top-1/2 left-5 transform -translate-y-1/2 text-white text-2xl border border-white/10 px-4 py-3 rounded-3xl bg-white/10 backdrop-blur-3xl"
-              onClick={prevImage}
-            >
-              ←
-            </button>
-            <button
-              className="absolute top-1/2 right-5 transform -translate-y-1/2 text-white text-2xl border border-white/10 px-4 py-3 rounded-3xl bg-white/10 backdrop-blur-3xl"
-              onClick={nextImage}
-            >
-              →
             </button>
           </div>
         </div>

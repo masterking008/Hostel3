@@ -68,22 +68,22 @@ const Footer = () => {
 
                             <ul className="mt-8 space-y-4 text-sm">
                                 <li>
-                                    <a href="./Gallery" class="text-slate-400 transition hover:text-slate-400/75">Gallery</a>
+                                    <a href="./Gallery" class="text-white/80 transition hover:text-white/80/75">Gallery</a>
                                 </li>
                                 <li>
-                                    <a href="./Mess" class="text-slate-400 transition hover:text-slate-400/75">Mess</a>
+                                    <a href="./Mess" class="text-white/80 transition hover:text-white/80/75">Mess</a>
                                 </li>
                                 <li>
-                                    <a href="./Sports" class="text-slate-400 transition hover:text-slate-400/75">Sports</a>
+                                    <a href="./Sports" class="text-white/80 transition hover:text-white/80/75">Sports</a>
                                 </li>
                                 <li>
-                                    <a href="./Cultural" class="text-slate-400 transition hover:text-slate-400/75">Cultural</a>
+                                    <a href="./Cultural" class="text-white/80 transition hover:text-white/80/75">Cultural</a>
                                 </li>
                                 <li>
-                                    <a href="./Tech" class="text-slate-400 transition hover:text-slate-400/75">Technical</a>
+                                    <a href="./Tech" class="text-white/80 transition hover:text-white/80/75">Technical</a>
                                 </li>
                                 <li>
-                                    <a href="./About" class="text-slate-400 transition hover:text-slate-400/75">About Us</a>
+                                    <a href="./About" class="text-white/80 transition hover:text-white/80/75">About Us</a>
                                 </li>
                             </ul>
                         </div>
@@ -96,27 +96,27 @@ const Footer = () => {
 
                             <ul className="mt-8 space-y-4 text-sm">
                                 <li>
-                                    <a href="" class="text-slate-400 transition hover:text-slate-400/75" target="_blank"
+                                    <a href="" class="text-white/80 transition hover:text-white/80/75" target="_blank"
                                         rel="noopener noreferrer">FAQs</a>
                                 </li>
                                 <li>
-                                    <a href="https://asc.iitb.ac.in" class="text-slate-400 transition hover:text-slate-400/75" target="_blank"
+                                    <a href="https://asc.iitb.ac.in" class="text-white/80 transition hover:text-white/80/75" target="_blank"
                                         rel="noopener noreferrer">ASC</a>
                                 </li>
                                 <li>
-                                    <a href="https://moodle.iitb.ac.in" class="text-slate-400 transition hover:text-slate-400/75" target="_blank"
+                                    <a href="https://moodle.iitb.ac.in" class="text-white/80 transition hover:text-white/80/75" target="_blank"
                                         rel="noopener noreferrer">Moodle</a>
                                 </li>
                                 <li>
-                                    <a href="https://webmail.iitb.ac.in" class="text-slate-400 transition hover:text-slate-400/75" target="_blank"
+                                    <a href="https://webmail.iitb.ac.in" class="text-white/80 transition hover:text-white/80/75" target="_blank"
                                         rel="noopener noreferrer">Webmail</a>
                                 </li>
                                 <li>
-                                    <a href="https://cc.iitb.ac.in" class="text-slate-400 transition hover:text-slate-400/75" target="_blank"
+                                    <a href="https://cc.iitb.ac.in" class="text-white/80 transition hover:text-white/80/75" target="_blank"
                                         rel="noopener noreferrer">Computer Center</a>
                                 </li>
                                 <li>
-                                    <a href="https://portal.iitb.ac.in/asc" class="text-slate-400 transition hover:text-slate-400/75" target="_blank"
+                                    <a href="https://portal.iitb.ac.in/asc" class="text-white/80 transition hover:text-white/80/75" target="_blank"
                                         rel="noopener noreferrer">External ASC</a>
                                 </li>
 
@@ -151,7 +151,7 @@ const Footer = () => {
                                         />
                                     </svg>
                                     <a
-                                        className="flex-1 text-slate-400"
+                                        className="flex-1 text-white/80"
                                         href="https://maps.app.goo.gl/Qv6gGW3xbHguVZrv7"
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -176,7 +176,7 @@ const Footer = () => {
                                         />
                                     </svg>
                                     <a
-                                        className="flex-1 text-slate-400"
+                                        className="flex-1 text-white/80"
                                         href="mailto:gsech3@iitb.ac.in"
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -201,7 +201,7 @@ const Footer = () => {
                                         />
                                     </svg>
                                     <a
-                                        className="flex-1 text-slate-400"
+                                        className="flex-1 text-white/80"
                                         href="tel:+912225762603"
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -229,9 +229,9 @@ const Footer = () => {
 
                 <div className="mt-12 border-t border-white/10 pt-6">
                     <div className="text-center">
-                        <p className="mt-4 text-sm text-slate-400 sm:order-first sm:mt-0">Made by Dinesh, Web Secretary, H3 Council 2024-25.
+                        <p className="mt-4 text-sm text-white/80 sm:order-first sm:mt-0">Made by Dinesh, Web Secretary, H3 Council 2024-25.
                         </p>
-                        <p className="mt-4 text-sm text-slate-400 sm:order-first sm:mt-0">&copy;2025 HOSTEL 3, IIT Bombay. All rights reserved.</p>
+                        <p className="mt-4 text-sm text-white/80 sm:order-first sm:mt-0">&copy;2025 HOSTEL 3, IIT Bombay. All rights reserved.</p>
                     </div>
                 </div>
             </div>

@@ -20,6 +20,9 @@ export default function Navbar() {
         };
     }, []);
 
+    const [hover, setHover] = useState(false);
+
+
     return (
         <>
             <header
@@ -35,7 +38,14 @@ export default function Navbar() {
                             <img
                                 alt="Vitruvians Logo"
                                 src={Logo}
-                                className="h-16 w-auto"
+                                style={{
+                                    height: "4rem",
+                                    width: "auto",
+                                    transform: hover ? "rotate(720deg) scale(1.25)" : "none",
+                                    transition: "transform 0.5s ease-in-out",
+                                }}
+                                onMouseEnter={() => setHover(true)}
+                                onMouseLeave={() => setHover(false)}
                             />
                         </a>
                     </div>
@@ -52,43 +62,43 @@ export default function Navbar() {
                     <div className="hidden lg:flex lg:gap-x-8">
                         <a
                             href="./"
-                            className="text-sm font-semibold leading-6 text-slate-100 hover:text-blue-400"
+                            className="text-sm font-semibold leading-6 text-slate-100 hover:text-lime-400"
                         >
                             HOME
                         </a>
                         <a
                             href="./Gallery"
-                            className="text-sm font-semibold leading-6 text-slate-100 hover:text-blue-400"
+                            className="text-sm font-semibold leading-6 text-slate-100 hover:text-lime-400"
                         >
                             GALLERY
                         </a>
                         <a
                             href="./Mess"
-                            className="text-sm font-semibold leading-6 text-slate-100 hover:text-blue-400"
+                            className="text-sm font-semibold leading-6 text-slate-100 hover:text-lime-400"
                         >
                             MESS
                         </a>
                         <a
                             href="./Sports"
-                            className="text-sm font-semibold leading-6 text-slate-100 hover:text-blue-400"
+                            className="text-sm font-semibold leading-6 text-slate-100 hover:text-lime-400"
                         >
                             SPORTS
                         </a>
                         <a
                             href="./Culturals"
-                            className="text-sm font-semibold leading-6 text-slate-100 hover:text-blue-400"
+                            className="text-sm font-semibold leading-6 text-slate-100 hover:text-lime-400"
                         >
                             CULTURAL
                         </a>
                         <a
                             href="./Tech"
-                            className="text-sm font-semibold leading-6 text-slate-100 hover:text-blue-400"
+                            className="text-sm font-semibold leading-6 text-slate-100 hover:text-lime-400"
                         >
                             TECH
                         </a>
                         <a
                             href="./About"
-                            className="text-sm font-semibold leading-6 text-slate-100 hover:text-blue-400"
+                            className="text-sm font-semibold leading-6 text-slate-100 hover:text-lime-400"
                         >
                             ABOUT US
                         </a>
