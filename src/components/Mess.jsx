@@ -9,7 +9,7 @@ export default function MessPage() {
             <div className="flex flex-col md:flex-row  bg-black/25 backdrop-blur-xl rounded-3xl shadow-lg border border-white/10 p-6 md:p-8 mx-4 sm:mx-6 md:mx-16 my-6 max-w-7xl">
                 <div className="w-full md:w-1/2 overflow-hidden rounded-2xl">
                     <img
-                        src="https://images.pexels.com/photos/958546/pexels-photo-958546.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        src="https://res.cloudinary.com/dcqw5mziu/image/upload/v1736533303/2_b8frrw.png"
                         alt="food"
                         className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"
                     />
@@ -52,7 +52,7 @@ export default function MessPage() {
             <div className="flex flex-col md:flex-row  bg-black/25 backdrop-blur-xl rounded-3xl shadow-lg border border-white/10 p-6 md:p-8 mx-4 sm:mx-6 md:mx-16 my-6 max-w-7xl">
                 <div className="w-full md:w-1/2 overflow-hidden rounded-2xl">
                     <img
-                        src="https://img.freepik.com/free-photo/photorealistic-wedding-venue-with-intricate-decor-ornaments_23-2151481493.jpg?t=st=1735934107~exp=1735937707~hmac=6253502063b19b4c5908c7519c400bdb0ab3b088f4e96e3ffb7b3a0fce39fbc8&w=996"
+                        src="https://res.cloudinary.com/dcqw5mziu/image/upload/v1736533303/3_w3gpkg.png"
                         alt="food"
                         className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"
                     />
@@ -78,7 +78,7 @@ export default function MessPage() {
                 </div>
                 <div className="w-full md:w-1/2 overflow-hidden rounded-2xl">
                     <img
-                        src="https://images.pexels.com/photos/958546/pexels-photo-958546.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        src="https://res.cloudinary.com/dcqw5mziu/image/upload/v1736533305/1_nhxziy.png"
                         alt="food"
                         className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"
                     />
