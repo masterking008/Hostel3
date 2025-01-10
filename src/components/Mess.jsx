@@ -84,7 +84,7 @@ export default function MessPage() {
                     />
                 </div>
             </div>
-
+{/* 
             <div className="flex flex-col md:flex-row items-center justify-center bg-black/25 backdrop-blur-xl rounded-3xl shadow-lg border border-white/10 p-6 md:p-8 mx-4 sm:mx-6 md:mx-16 my-6 max-w-7xl space-y-4 md:space-y-0 md:space-x-6">
                 <button className="bg-gray-700 text-white rounded-full py-2 px-6 transition-transform duration-300 transform hover:scale-105">
                     Complaints
@@ -95,9 +95,9 @@ export default function MessPage() {
                 <button className="bg-gray-500 text-white rounded-full py-2 px-6 transition-transform duration-300 transform hover:scale-105">
                     Current Menu
                 </button>
-            </div>
+            </div> */}
 
-            <div className="flex flex-col md:flex-row items-center justify-center bg-black/25 backdrop-blur-xl rounded-3xl shadow-lg border border-white/10 p-6 md:p-8 mx-4 sm:mx-6 md:mx-16 my-6 max-w-7xl space-y-4 md:space-y-0 md:space-x-6">
+            {/* <div className="flex flex-col md:flex-row items-center justify-center bg-black/25 backdrop-blur-xl rounded-3xl shadow-lg border border-white/10 p-6 md:p-8 mx-4 sm:mx-6 md:mx-16 my-6 max-w-7xl space-y-4 md:space-y-0 md:space-x-6">
 
                 <h2 className="text-center text-3xl font-bold text-white mb-8">Meet Your Mess Team</h2>
 
@@ -145,7 +145,7 @@ export default function MessPage() {
                     </div>
 
                 </div>
-            </div>
+            </div> */}
 
 
         </div>
