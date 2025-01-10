@@ -11,6 +11,7 @@ import MessPage from "./components/Mess";
 import SportsPage from "./components/Sports";
 import TechnicalsPage from "./components/Technical";
 import CulturalsPage from "./components/Cultural";
+import BackToTop from "./components/BackToTop";
 
 export default function App() {
   return (
@@ -39,6 +40,7 @@ export default function App() {
 
       {/* Footer Section */}
       <Footer />
+      <BackToTop/>
     </>
   );
 }

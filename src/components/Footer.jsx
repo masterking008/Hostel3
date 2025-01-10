@@ -229,7 +229,7 @@ const Footer = () => {
 
                 <div className="mt-12 border-t border-white/10 pt-6">
                     <div className="text-center">
-                        <p className="mt-4 text-sm text-white/80 sm:order-first sm:mt-0">Made by Dinesh, Web Secretary, H3 Council 2024-25.
+                        <p className="mt-4 text-sm text-white/80 sm:order-first sm:mt-0">Made with 💖 by Web Team, H3 Council 2024-25.
                         </p>
                         <p className="mt-4 text-sm text-white/80 sm:order-first sm:mt-0">&copy;2025 HOSTEL 3, IIT Bombay. All rights reserved.</p>
                     </div>

@@ -20,7 +20,6 @@ export default function Navbar() {
         };
     }, []);
 
-    const [hover, setHover] = useState(false);
 
 
     return (
@@ -38,14 +37,7 @@ export default function Navbar() {
                             <img
                                 alt="Vitruvians Logo"
                                 src={Logo}
-                                style={{
-                                    height: "4rem",
-                                    width: "auto",
-                                    transform: hover ? "rotate(720deg) scale(1.25)" : "none",
-                                    transition: "transform 0.5s ease-in-out",
-                                }}
-                                onMouseEnter={() => setHover(true)}
-                                onMouseLeave={() => setHover(false)}
+                                className='h-16'
                             />
                         </a>
                     </div>
@@ -112,18 +104,13 @@ export default function Navbar() {
                 >
                     {/* Background overlay */}
                     <div
-                        className={`fixed inset-0 bg-gray-900/50 transition-opacity duration-300 ${mobileMenuOpen ? 'opacity-100' : 'opacity-0'
+                        className={`fixed inset-0 bg-gray-900/50 transition-opacity duration-300 ${mobileMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
                             }`}
                     />
                     {/* Sliding panel */}
                     <div
-                        style={{
-                            transform: mobileMenuOpen
-                                ? 'translateX(0)'
-                                : 'translateX(100%)',
-                            transition: 'transform 0.5s ease-in-out',
-                        }}
-                        className="fixed inset-y-0 right-0 bg-black/5 backdrop-blur-xl shadow-xl p-5 text-slate-100 w-72 h-full"
+                        className={`fixed inset-y-0 right-0 bg-black/5 backdrop-blur-xl shadow-xl p-5 text-slate-100 w-72 h-full transform transition-transform duration-1000 ease-in-out ${mobileMenuOpen ? "translate-x-0" : "translate-x-full"
+                            }`}
                     >
                         <div className="flex items-center justify-end mb-6">
                             <button
@@ -181,6 +168,7 @@ export default function Navbar() {
                         </div>
                     </div>
                 </Dialog>
+
             </header>
             {navbarBlur && (
                 <div className="fixed inset-x-0 top-20 h-px bg-gradient-to-r from-transparent via-[rgba(221,214,254,0.15)] to-transparent" />

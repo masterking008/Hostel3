@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 const API_KEY = 'AIzaSyC1lTT_RGPic5Br-cJU0FVrV3LwnS4pQTE';
 const SHEET_ID = '1EMPNnc-5QZXgCBDkY667j0U5Il_mJmAocxNNgldM1V8';
 
+
 const Card = ({ entry }) => (
     <div className="card my-10 mx-5 h-80 w-64 scale-[1.15] sm:scale-100">
         <div className="card__side card__side--front bg-black/25 backdrop-blur-3xl rounded-3xl shadow-xl shadow-slate-900/10 border border-white/10 p-4 text-center h-80 w-64">
@@ -104,7 +105,7 @@ const TeamSection = () => {
     }, []);
 
     return (
-        <div className="py-16 shadow-inner">
+        <div className="py-5 shadow-inner">
             <div className="text-center">
                 <h2 className="my-5 text-3xl leading-8 font-extrabold tracking-tight text-gray-50 sm:text-4xl">
                     Hostel 3 Council
