@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
@@ -26,33 +26,42 @@ function CustomRightArrow({ onClick }) {
     );
 }
 
+const API_KEY = 'AIzaSyC1lTT_RGPic5Br-cJU0FVrV3LwnS4pQTE';
+const SHEET_ID = '1TU6YPNY74guEW8EuKD6nkTNCBizOzhsmNS47pEm2Ikg';
+
 export default function News() {
-    const newsData = [
-        {
-            title: "A Rapid Package of Helpfulness!",
-            text: "There were almost everything where I got stuck. Starting from registration to all the way to sitting in an online class. I was able to pass each step smoothly only after contacting IRSCP team...",
-            name: "Vikram Bhist",
-            dept: "Mechanical Engg",
-        },
-        {
-            title: "My support system!",
-            text: "Getting selected to one of the best colleges of India was equally daunting as exciting given the COVID-19 scenario. But from the very beginning, the IRSCP team was with me guiding me...",
-            name: "Siddhant Jain",
-            dept: "Mechanical Engg",
-        },
-        {
-            title: "Wonderful Support!",
-            text: "I was oblivious on what to expect from such an institute. There was an overwhelming sensation once I received the offer letter. From the time I received the offer letter till the end of the semester...",
-            name: "Haritha Joseph",
-            dept: "MEMS",
-        },
-        {
-            title: "Quick Support!",
-            text: "I was nervous before coming to the institute. Being one of the prestigious institutes of India, I was very well under pressure on what is expected from me. But, with the help of IRSCP and my mentor...",
-            name: "Gilbert M George",
-            dept: "Earth Sciences",
-        },
-    ];
+    const [data, setData] = useState([]);
+    const [loading, setLoading] = useState(true);
+
+    const fetchData = async (sheetName) => {
+        const url = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${sheetName}?key=${API_KEY}`;
+        try {
+            const response = await fetch(url);
+            const result = await response.json();
+            if (!response.ok) {
+                throw new Error(`Failed to fetch data: ${response.status} - ${response.statusText}`);
+            }
+            const rows = result.values.slice(1); // Exclude header row
+            return rows.map((row) => ({
+                title: row[0] || "No Title",
+                text: row[1] || "No Description",
+                name: row[2] || "Anonymous",
+                link: row[3],
+                image: row[4] || "https://res.cloudinary.com/dcqw5mziu/image/upload/v1736537961/Untitled_design_1_pesey9.png", // Default placeholder image
+            }));
+        } catch (error) {
+            console.error(`Error fetching ${sheetName} data:`, error);
+            return [];
+        }
+    };
+
+    useEffect(() => {
+        (async () => {
+            const fetchedData = await fetchData('NEWS'); // Fetch data from 'NEWS' sheet
+            setData(fetchedData);
+            setLoading(false); // Set loading to false once data is fetched
+        })();
+    }, []);
 
     const responsive = {
         desktop: { breakpoint: { max: 3000, min: 1024 }, items: 1 },
@@ -81,9 +90,14 @@ export default function News() {
                     customRightArrow={<CustomRightArrow />}
                     className="mt-16"
                 >
-                    {newsData.map((news, index) => (
-                        <NewsCard key={index} news={news} />
-                    ))}
+                    {loading ? (
+                        <div className="flex justify-center items-center py-10">
+                            <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-slate-100"></div>
+                        </div>) : (
+                        data.map((news, index) => (
+                            <NewsCard key={index} news={news} />
+                        ))
+                    )}
                 </Carousel>
             </div>
         </section>
@@ -97,7 +111,7 @@ function NewsCard({ news }) {
             <div className="flex-shrink-0 sm:w-1/3 h-48 sm:h-full rounded-2xl overflow-hidden">
                 <img
                     alt={news.name}
-                    src="https://img.freepik.com/premium-psd/character-avatar-3d-illustration_460336-706.jpg"
+                    src={news.image}
                     className="h-full w-full object-cover rounded-2xl transform transition-transform duration-500 hover:scale-110"
                 />
             </div>
@@ -117,7 +131,13 @@ function NewsCard({ news }) {
                         <div className="font-display text-base text-slate-100">
                             {news.name}
                         </div>
-                        <div className="mt-1 text-sm text-slate-300">{news.dept}</div>
+                        {news.link && (
+                            <div className="mt-1 text-sm text-slate-300">
+                                <a href={news.link} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
+                                    {news.link}
+                                </a>
+                            </div>
+                        )}
                     </div>
                 </figcaption>
             </div>

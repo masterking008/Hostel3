@@ -77,7 +77,7 @@ export default function SportsPage() {
                 </div>
                 <div className="w-full md:w-1/2 overflow-hidden rounded-2xl">
                     <img
-                        src="https://images.pexels.com/photos/958546/pexels-photo-958546.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        src="https://res.cloudinary.com/dcqw5mziu/image/upload/v1736533984/h3PLG_uvylhe.png"
                         alt="food"
                         className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"
                     />
@@ -86,8 +86,8 @@ export default function SportsPage() {
             <div className="flex flex-col md:flex-row  bg-black/25 backdrop-blur-xl rounded-3xl shadow-lg border border-white/10 p-6 md:p-8 mx-4 sm:mx-6 md:mx-16 my-6 max-w-7xl">
                 <div className="w-full md:w-1/2 overflow-hidden rounded-2xl">
                     <img
-                        src="https://images.pexels.com/photos/958546/pexels-photo-958546.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="food"
+                        src="https://res.cloudinary.com/dcqw5mziu/image/upload/v1736534616/H3CL_zqma34.jpg"
+                        alt="H3PL"
                         className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"
                     />
                 </div>
@@ -98,7 +98,7 @@ export default function SportsPage() {
 
                 </div>
             </div>
-            <div className="flex flex-col bg-black/25 backdrop-blur-xl rounded-3xl shadow-lg border border-white/10 p-6 md:p-8 mx-4 sm:mx-6 md:mx-16 my-6 max-w-7xl">
+            {/* <div className="flex flex-col bg-black/25 backdrop-blur-xl rounded-3xl shadow-lg border border-white/10 p-6 md:p-8 mx-4 sm:mx-6 md:mx-16 my-6 max-w-7xl">
                 <h2 className="text-center text-4xl font-bold text-white mb-6">
                     Our Sports Activities
                 </h2>
@@ -124,7 +124,7 @@ export default function SportsPage() {
                     </div>
                 </div>
 
-            </div>
+            </div> */}
         </div>
     )
 }
